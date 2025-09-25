@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AR</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Tenor+Sans&display=swap");
+    </style>
+    <script src="https://unpkg.com/akar-icons-fonts"></script>
+    <link rel="stylesheet" href="./styles/theme.css" />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="stylesheet" href="./styles/sobre.css" />
+    <link rel="stylesheet" href="./styles/serviços.css" />
+    <link rel="stylesheet" href="./styles/menu2.css" />
+    <link rel="stylesheet" href="./styles/carrossel.css" />
+  </head>
+  <body>
+    <header class="cabeçalho">
+      <i class="ai-three-line-horizontal icone" id="icone"></i>
+      <img src="./imgs/Logo.png" alt="Logo" class="logo" draggable="false" />
+      <nav class="Menu">
+        <button onclick="Home()">Home</button>
+        <button onclick="Scroll('Sobre')">Sobre nós</button>
+        <button onclick="Scroll('Serviços')">Serviços</button>
+        <button onclick="Scroll('Contatos')">Contatos</button>
+      </nav>
+    </header>
+    <div class="menu2" id="menu2">
+      <ul class="menu2">
+        <li class="menu2" onclick="Home()">Home</li>
+        <li class="menu2" onclick="Scroll('Sobre')">Sobre</li>
+        <li class="menu2" onclick="Scroll('Serviços')">Serviços</li>
+        <li class="menu2" onclick="Scroll('Contatos')">Contato</li>
+      </ul>
+    </div>
+    <div id="Home" class="Home">
+      <div class="Container">
+        <img
+          src="./imgs/Logo.png"
+          width="160px"
+          alt=""
+          id="logoCentral"
+          draggable="false"
+        />
+        <h1 class="titulo">
+          DR. REGINALDO CARVALHO <br />&<br />
+          DR. ANDREZA ALEXANDRA
+        </h1>
+        <span class="titulo" id="advocacia"
+          >ADVOCACIA & CONSULTORIA JURÍDICA</span
+        >
+      </div>
+    </div>
+
+    <section id="Sobre" class="sobreAdvogados">
+      <!-- <img src="./imgs/FundoImg.png" alt="" id="fundoImg" /> -->
+      <img
+        src="imgs/DrReginaldo1.jpeg"
+        width="180px"
+        alt="Dr. Reginaldo"
+        style="border-radius: 20px; border: 3px solid #020202"
+      />
+      <div class="sobre">
+        <h1 class="advogados">Dr. Reginaldo Alves de Carvalho<br /></h1>
+        <span> Advogado </span>
+        <p>
+          ADVOGADO MILITANTE DESDE <br />2022. PÓS-GRADUADO EM <br />
+          DIREITO PREVIDENCIÁRIO, <br />DIREITO ELEITORAL. ATUA <br />
+          DIRETAMENTE NAS ÁREAS DE <br />DIREITO DO TRABALHO E <br />
+          PROCESSO TRABALHISTA, <br />DIREITO DE FAMÍLIA E <br />
+          SUCESSÕES, ALÉM DE <br />MEDIAÇÃO DE CONFLITOS.
+        </p>
+        <input
+          type="button"
+          value="Ver Especialidades"
+          class="Especialidades"
+        />
+      </div>
+    </section>
+
+    <section class="sobreAdvogados">
+      <!-- <img src="./imgs/FundoImg.png" alt="" id="fundoImg" /> -->
+      <img
+        src="imgs/DraAndreza.jpeg"
+        width="180"
+        style="
+          margin-left: -60px;
+          border-radius: 50px;
+          border: 3px solid #020202;
+        "
+        alt="Dra. Andreza"
+      />
+      <div class="sobre">
+        <h1 class="advogados">Dra. Andreza Alexandra Soares Sousa<br /></h1>
+        <span> Advogada </span>
+        <p>
+          ADVOGADA MILITANTE <br />
+          DESDE 2004. MEDIADORA <br />JUDICIAL. PROFESSORA <br />UNIVERSITÁRIA
+          DESDE <br />2005, TENDO LECIONADO<br />
+          EM DIVERSAS FACULDADES <br />NO PIAUÍ E MARANHÃO.<br />PÓS GRADUAÇÃO
+          EM <br />DIREITO E PROCESSO DO <br />TRABALHO
+        </p>
+        <input
+          type="button"
+          value="Ver Especialidades"
+          class="Especialidades"
+        />
+      </div>
+    </section>
+
+    <section id="Serviços">
+      <h1>Serviços</h1>
+      <table>
+        <tr>
+          <td>
+            <span class="tituloServiços">DIREITO DO TRABALHO</span>
+            <span class="hidden">
+              <br />
+              Defesa dos direitos de trabalhadores e empregadores, consultoria e
+              atuação em processos trabalhistas.
+            </span>
+          </td>
+          <td>
+            <span class="tituloServiços">DIREITO PREVIDENCIÁRIO </span>
+            <span class="hidden">
+              <br />
+              Aposentadorias, pensões, auxílios e outros benefícios junto ao
+              INSS, tanto na esfera administrativa quanto judicial.
+            </span>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="tituloServiços"> DIREITO DO CONSUMIDOR </span>
+            <span class="hidden">
+              <br />
+              Atuação na defesa dos direitos do consumidor em questões de
+              produtos, serviços, contratos e práticas abusivas.
+            </span>
+          </td>
+          <td>
+            <span class="tituloServiços"> DIREITO CIVIL </span>
+            <span class="hidden">
+              <br />
+              Soluções para questões de contratos, obrigações, responsabilidade
+              civil, posse e propriedade.
+            </span>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="tituloServiços"> PROCESSO TRABALHISTA </span>
+            <span class="hidden">
+              <br />
+              Representação em todas as fases do processo, desde a audiência
+              inicial até os recursos nos tribunais superiores.
+            </span>
+          </td>
+          <td>
+            <span class="tituloServiços"> DIREITO DE FAMÍLIA </span>
+            <span class="hidden">
+              <br />
+              Questões de divórcio, pensão alimentícia, guarda de filhos,
+              inventários, partilha de bens e testamentos.
+            </span>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="tituloServiços"> MEDIAÇÃO DE CONFLITOS </span>
+            <span class="hidden">
+              <br />
+              Solução de disputas de forma amigável e eficiente, buscando o
+              consenso entre as partes fora do ambiente judicial.
+            </span>
+          </td>
+        </tr>
+      </table>
+    </section>
+
+    <section id="Avaliações">
+      <h1>Avaliações dos Clientes</h1>
+      <div id="Carrossel" class="carrossel-section">
+        <div class="carrossel-container">
+          <div class="carrossel-slide ativo">
+            <img
+              src="imgs/Cliente1.jpeg"
+              class="carrossel-img"
+              alt="Exemplo 1"
+            />
+            <h3>Depoimento de Júlio</h3>
+            <p class="depoimento">
+              "Quero deixar registrado meu agradecimento ao AR Escritório de
+              Advocacia & Acessoria Jurídica. Fui muito bem atendido, com
+              atenção, respeito e profissionalismo. Minha demanda trabalhista
+              foi resolvida com eficiência e transparência. Recomendo de olhos
+              fechados! 👏⚖️ #AtendimentoDeExcelência"
+            </p>
+          </div>
+          <div class="carrossel-slide">
+            <img
+              src="imgs/Cliente2.jpeg"
+              class="carrossel-img"
+              alt="Exemplo 2"
+            />
+            <h3>Depoimento de José Orlando.</h3>
+            <p class="depoimento">
+              "Quero agradecer ao AR Escritório de Advocacia & Acessoria
+              Jurídica pelo atendimento incrível! Fui super bem recebido, minha
+              causa trabalhista foi resolvida com rapidez e profissionalismo.
+              Recomendo demais — equipe nota 10!"
+            </p>
+          </div>
+          <div class="carrossel-slide">
+            <img
+              src="imgs/FundoImg.png"
+              class="carrossel-img"
+              alt="Exemplo 2"
+            />
+            <h3>Depoimento de Maria.</h3>
+            <p class="depoimento">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt
+              blanditiis recusandae labore est, porro quasi quis odit ipsa,
+              sequi tenetur voluptatem, non aspernatur magnam molestias ipsum!
+            </p>
+          </div>
+          <!-- Adicione mais slides -->
+          <button class="carrossel-prev">&LeftArrowBar;</button>
+          <button class="carrossel-next">&RightArrowBar;</button>
+        </div>
+      </div>
+    </section>
+
+    <section id="Contatos">
+      <h1 style="text-align: center">Entre em Contato</h1>
+      <footer>
+        <p>
+          <span> Endereço<br /> </span>
+          Rua Alcides Freitas<br />
+          Edifício Mario vitorio Sala 33,<br />Bairro Por enquanto, Num. 3175
+        </p>
+        <p>
+          Email Address:
+          <br />
+          <a href="mailto:contato@arescritorio.com">contato@arescritorio.com</a>
+        </p>
+      </footer>
+      <br />
+      <br />
+      <p style="text-align: center; font-size: 14px; margin-top: 60px">
+        &copy; 2024 AR Escritório de Advocacia & Acessoria Jurídica<br />
+      </p>
+    </section>
+
+    <div class="WhatsAppBtnContainer">
+      <img
+        class="WhatsAppBtn"
+        src="./imgs/WhatsAppLogo.png"
+        width="50px"
+        alt="WhatsApp"
+        draggable="false"
+      />
+      <div class="block"></div>
+      <span id="WhatsAppTxt">WhatsApp</span>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

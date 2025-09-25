@@ -1,0 +1,19 @@
+:root {
+  --cor-de-fundo: #021b06;
+  --cor-primaria: #ddd;
+  --cor-secundaria: #001000;
+  --cor-terciaria: #bea340;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: var(--cor-primaria);
+  font-family: "Fraunces", serif;
+}
+body {
+  overflow-x: hidden;
+  background-color: var(--cor-de-fundo);
+  height: 440vh;
+}
+

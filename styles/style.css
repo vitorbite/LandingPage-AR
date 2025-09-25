@@ -1,0 +1,256 @@
+h1{
+  text-align: center;
+  font-size: 25pt;
+}
+img{
+  -webkit-user-drag: none;
+}
+.icone{
+  display: none;
+}
+header.cabeçalho {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  height: 65px;
+  padding: 5px;
+  overflow: hidden;
+  border-bottom: 1px solid var(--cor-primaria);
+  background: var(--cor-secundaria);
+  position: sticky;
+  top: 0%;
+  bottom: auto;
+  z-index: 999;
+}
+div#Home{
+  height: 100dvh;
+}
+.logo {
+  width: 130px;
+  height: 130px;
+  overflow: hidden;
+  margin-top: -35px;
+  position: relative;
+  left: -5%;
+}
+.logo:hover {
+  filter: brightness(1.4);
+}
+.Menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 75%;
+}
+button {
+  border-radius: 50px;
+  height: 50px;
+  width: 15%;
+  background: none;
+  text-wrap: nowrap;
+  transition: 0.5s;
+  border: var(--cor-primaria) solid;
+  animation: fadeIn 1.5s ease-in-out forwards;
+  opacity: 0;
+}
+button:nth-child(1) {
+  animation-delay: 0.2s;
+}
+button:nth-child(2) {
+  animation-delay: 0.4s;
+}
+button:nth-child(3) {
+  animation-delay: 0.6s;
+}
+button:nth-child(4) {
+  animation-delay: 0.8s;
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+button:hover {
+  transition: 0.3s;
+  color: var(--cor-de-fundo);
+  border: #020202 solid 2px;
+  background-color: var(--cor-primaria);
+}
+.Container {
+  margin: 50px auto;
+  border: 2px solid var(--cor-primaria);
+  border-radius: 50%;
+  width: 500px;
+  height: 500px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+#logoCentral {
+  margin-top: -25%;
+}
+.titulo {
+  font-size: 20pt;
+  padding: 12px;
+}
+span.titulo {
+  border: 1px solid var(--cor-primaria);
+  padding: 5px;
+  font-size: 16pt;
+}
+
+section {
+  height: 100dvh;
+  border-top: 1px solid var(--cor-primaria);
+  padding: 25px;
+  padding-top: 65px;
+}
+div.sobre{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+p{
+  margin-top: 50px;
+  letter-spacing: 2px;
+  text-align: center;
+  font-family: "Tenor Sans", sans-serif;
+}
+.Especialidades{
+  background-color: #296f8d;
+  border: 1px solid black;
+  padding: 10px 20px;
+  border-radius: 10px;
+  width: 200px;
+  margin-top: 55px;
+  font-family: "Tenor Sans", sans-serif;
+  font-weight: bold;
+}
+
+#fundoImg {
+  width: 200px;
+  height: 300px;
+  border-radius: 30px;
+  clip-path: polygon(
+    0% 0%,
+    100% 0%,
+    100% 45%,
+    99% 49%,
+    98% 50%,
+    92% 56%,
+    90% 60%,
+    90% 90%,
+    89% 93%,
+    87% 95%,
+    80% 99%,
+    75% 100%,
+    0% 100%
+  );
+}
+
+/* Rodapé */
+footer {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 200px;
+  flex-wrap: wrap;
+  height: 150px;
+}
+
+/* Ícone do WhatsApp */
+.WhatsAppBtnContainer {
+  position: fixed;
+  bottom: 20px;
+  width: 50px;
+  right: 30px;
+  z-index: 998;
+  border-radius: 50px 50px 50px 50px;
+  overflow: hidden;
+  transition: 1s;
+  cursor: pointer;
+}
+.WhatsAppBtn {
+  position: relative;
+  display: block;
+  z-index: 998;
+  background: #ddd;
+  border-radius: 50%;
+}
+span#WhatsAppTxt{
+    position: absolute;
+    top: 50%;
+    left: 70%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+}
+.WhatsAppBtnContainer:hover{
+  background-color: #00cc3d;
+  width: 140px;
+  opacity: 1;
+  #WhatsAppTxt{
+    opacity: 1;
+    transition: 1s;
+  }
+}
+@media (max-width: 600px) { 
+  .Menu {
+    width: 100%;
+    display: none;
+  }
+  .icone{
+    height: 80%;
+    display: block;
+    position: relative;
+    left: -25%;
+    top: 50%;
+    padding: 5px;
+    font-size: 20pt;
+    border: 2px solid var(--cor-primaria);
+    transform: translateY(-50%);
+  }
+  .icone:hover{
+    background-color: #ddd;
+    color: #020202;
+  }
+  .logo{
+    left: -5%;
+  }
+  div#Home{
+    padding: 25px;
+  }
+  .Container {
+    width: 70vw;
+    height: 70vw;
+    margin-top: 25%;
+  }
+  #logoCentral {
+    margin-bottom: calc(-10% - 15px);
+    width: 140px;
+  }
+  .titulo {
+    font-size: 100%;
+  }
+  span.titulo {
+    font-size: 55%;
+    text-wrap: wrap;
+  }
+}
+@media (max-width: 450px) { /* Ajustes de Tela para celulares */
+  .Container{
+    position: relative;
+    top: 40%;
+    transform: translateY(-50%);
+    margin-top: 0;
+  }
+@media (max-width: 340px) {
+  span.titulo{
+    display: none;
+  }
+}
+}
