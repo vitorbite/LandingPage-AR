@@ -166,13 +166,15 @@ footer {
   justify-content: space-evenly;
   align-items: center;
   flex-direction: column;
-  
   flex-wrap: wrap;
+  background-color: var(--cor-de-fundo);
+  border-top: 1px solid var(--cor-primaria);
 }
 #Contatos{
   height: 100dvh;
-  margin-top: -90px;
+  margin-top: 0px;
   padding: 20px 10px;
+  background-color: var(--cor-secundaria);
 }
 .contato {
   font-weight: bold;
