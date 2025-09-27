@@ -4,4 +4,35 @@ section.sobreAdvogados{
     justify-content: space-around;
     align-items: center;
 }
+.fotoAdvogados{
+    position: relative;
+    left: 0%;
+    border: 5px solid var(--cor-terciaria);
+    z-index: -1;
+    width: 330px;
+    height: 330px;
+    border-radius: 50%;
+}
 
+@media screen and (max-width: 600px) {
+    .fotoAdvogados {
+        width: 300px;
+        height: 300px;
+        margin-bottom: -40px;
+    }
+    section.sobreAdvogados {
+        flex-direction: column;
+        gap: 0px;
+        padding: 0px;
+        margin: 0px;
+    }
+    .sobre {
+        text-align: center;
+        padding: 0px 10px;
+        font-size: 85%;
+        }
+    .advogados {
+        font-size: 18pt;
+    }
+
+}

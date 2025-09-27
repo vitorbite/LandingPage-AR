@@ -11,6 +11,7 @@ function Scroll(area) {
     block: "start",
   });
 }
+
 const icone = document.getElementById("icone");
 const menu = document.getElementById("menu2");
 
@@ -20,23 +21,22 @@ document.addEventListener("click", (e) => {
   if (el.className != "menu2" || el.tagName == "LI") {
     menu.style.display = "none";
   }
-  if (el.id == "icone"){
+  if (el.id == "icone") {
     mudaMenu(!op);
   }
 });
-function mudaMenu(x){
+function mudaMenu(x) {
   op = x;
-  x ? menu.style.display = "block" : menu.style.display = "none"
+  x ? (menu.style.display = "block") : (menu.style.display = "none");
 }
 
-
-document.addEventListener('DOMContentLoaded', () => {
-  const slides = document.querySelectorAll('.carrossel-slide');
-  const inner = document.createElement('div');
-  inner.className = 'carrossel-inner';
-  slides.forEach(slide => inner.appendChild(slide));
-  const container = document.querySelector('.carrossel-container');
-  container.insertBefore(inner, container.querySelector('.carrossel-prev'));
+document.addEventListener("DOMContentLoaded", () => {
+  const slides = document.querySelectorAll(".carrossel-slide");
+  const inner = document.createElement("div");
+  inner.className = "carrossel-inner";
+  slides.forEach((slide) => inner.appendChild(slide));
+  const container = document.querySelector(".carrossel-container");
+  container.insertBefore(inner, container.querySelector(".carrossel-prev"));
 
   const n = slides.length;
   const angle = 360 / n;
@@ -50,12 +50,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
   function updateActive() {
     slides.forEach((slide, i) => {
-      slide.classList.toggle('ativo', i === ((current % n + n) % n));
+      slide.classList.toggle("ativo", i === ((current % n) + n) % n);
     });
   }
 
   function rotateCarousel() {
-    inner.style.transition = 'transform 0.8s';
+    inner.style.transition = "transform 0.8s";
     inner.style.transform = `rotateY(${-totalRot}deg)`;
     updateActive();
   }
@@ -72,18 +72,18 @@ document.addEventListener('DOMContentLoaded', () => {
     rotateCarousel();
   }
 
-  document.querySelector('.carrossel-prev').onclick = goToPrev;
-  document.querySelector('.carrossel-next').onclick = goToNext;
+  document.querySelector(".carrossel-prev").onclick = goToPrev;
+  document.querySelector(".carrossel-next").onclick = goToNext;
 
   // Auto slide (opcional)
   let timer = setInterval(goToNext, 15000);
 
   // Reinicia o timer ao interagir
-  document.querySelector('.carrossel-prev').addEventListener('click', () => {
+  document.querySelector(".carrossel-prev").addEventListener("click", () => {
     clearInterval(timer);
     timer = setInterval(goToNext, 15000);
   });
-  document.querySelector('.carrossel-next').addEventListener('click', () => {
+  document.querySelector(".carrossel-next").addEventListener("click", () => {
     clearInterval(timer);
     timer = setInterval(goToNext, 15000);
   });

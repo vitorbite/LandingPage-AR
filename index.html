@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="./styles/serviços.css" />
     <link rel="stylesheet" href="./styles/menu2.css" />
     <link rel="stylesheet" href="./styles/carrossel.css" />
+    <link rel="stylesheet" href="./styles/WhatsAppIcon.css" />
   </head>
   <body>
     <header class="cabeçalho">
@@ -34,6 +35,8 @@
         <li class="menu2" onclick="Scroll('Contatos')">Contato</li>
       </ul>
     </div>
+
+    <!-- Home Section -->
     <div id="Home" class="Home">
       <div class="Container">
         <img
@@ -53,13 +56,12 @@
       </div>
     </div>
 
+    <!-- Sobre Section -->
     <section id="Sobre" class="sobreAdvogados">
-      <!-- <img src="./imgs/FundoImg.png" alt="" id="fundoImg" /> -->
       <img
         src="imgs/DrReginaldo1.jpeg"
-        width="180px"
         alt="Dr. Reginaldo"
-        style="border-radius: 20px; border: 3px solid #020202"
+        class="fotoAdvogados"
       />
       <div class="sobre">
         <h1 class="advogados">Dr. Reginaldo Alves de Carvalho<br /></h1>
@@ -75,23 +77,20 @@
           type="button"
           value="Ver Especialidades"
           class="Especialidades"
+          onclick="Scroll('Serviços')"
         />
       </div>
     </section>
 
+    <!-- Dra. Andreza Section -->
     <section class="sobreAdvogados">
       <!-- <img src="./imgs/FundoImg.png" alt="" id="fundoImg" /> -->
       <img
         src="imgs/DraAndreza.jpeg"
-        width="180"
-        style="
-          margin-left: -60px;
-          border-radius: 50px;
-          border: 3px solid #020202;
-        "
+        class="fotoAdvogados"
         alt="Dra. Andreza"
       />
-      <div class="sobre">
+      <div class="sobre" id="sobreDraAndreza">
         <h1 class="advogados">Dra. Andreza Alexandra Soares Sousa<br /></h1>
         <span> Advogada </span>
         <p>
@@ -105,15 +104,18 @@
           type="button"
           value="Ver Especialidades"
           class="Especialidades"
+          onclick="Scroll('Serviços')"
         />
       </div>
     </section>
 
+    <!-- Serviços Section -->
     <section id="Serviços">
       <h1>Serviços</h1>
+      <img id="leftLogo" class="Logo2" src="imgs/Logo2.png" width="300px" alt="logo2">
       <table>
         <tr>
-          <td>
+          <td tabindex="0">
             <span class="tituloServiços">DIREITO DO TRABALHO</span>
             <span class="hidden">
               <br />
@@ -121,7 +123,7 @@
               atuação em processos trabalhistas.
             </span>
           </td>
-          <td>
+          <td tabindex="0">
             <span class="tituloServiços">DIREITO PREVIDENCIÁRIO </span>
             <span class="hidden">
               <br />
@@ -131,7 +133,7 @@
           </td>
         </tr>
         <tr>
-          <td>
+          <td tabindex="0">
             <span class="tituloServiços"> DIREITO DO CONSUMIDOR </span>
             <span class="hidden">
               <br />
@@ -139,7 +141,7 @@
               produtos, serviços, contratos e práticas abusivas.
             </span>
           </td>
-          <td>
+          <td tabindex="0">
             <span class="tituloServiços"> DIREITO CIVIL </span>
             <span class="hidden">
               <br />
@@ -149,7 +151,7 @@
           </td>
         </tr>
         <tr>
-          <td>
+          <td tabindex="0">
             <span class="tituloServiços"> PROCESSO TRABALHISTA </span>
             <span class="hidden">
               <br />
@@ -157,7 +159,7 @@
               inicial até os recursos nos tribunais superiores.
             </span>
           </td>
-          <td>
+          <td tabindex="0">
             <span class="tituloServiços"> DIREITO DE FAMÍLIA </span>
             <span class="hidden">
               <br />
@@ -167,7 +169,7 @@
           </td>
         </tr>
         <tr>
-          <td>
+          <td tabindex="0">
             <span class="tituloServiços"> MEDIAÇÃO DE CONFLITOS </span>
             <span class="hidden">
               <br />
@@ -177,12 +179,16 @@
           </td>
         </tr>
       </table>
+      <img id="rightLogo" class="Logo2" src="imgs/Logo2.png" width="300px" alt="logo2">
     </section>
 
+    <!-- Avaliações Section -->
     <section id="Avaliações">
       <h1>Avaliações dos Clientes</h1>
       <div id="Carrossel" class="carrossel-section">
+        <!-- Carrossel de Avaliações -->
         <div class="carrossel-container">
+          <!-- Slide 1 -->
           <div class="carrossel-slide ativo">
             <img
               src="imgs/Cliente1.jpeg"
@@ -198,6 +204,8 @@
               fechados! 👏⚖️ #AtendimentoDeExcelência"
             </p>
           </div>
+
+          <!-- Slide 2 -->
           <div class="carrossel-slide">
             <img
               src="imgs/Cliente2.jpeg"
@@ -212,6 +220,8 @@
               Recomendo demais — equipe nota 10!"
             </p>
           </div>
+
+          <!-- Slide 3 -->
           <div class="carrossel-slide">
             <img
               src="imgs/FundoImg.png"
@@ -225,46 +235,68 @@
               sequi tenetur voluptatem, non aspernatur magnam molestias ipsum!
             </p>
           </div>
-          <!-- Adicione mais slides -->
           <button class="carrossel-prev">&LeftArrowBar;</button>
           <button class="carrossel-next">&RightArrowBar;</button>
         </div>
       </div>
     </section>
 
-    <section id="Contatos">
-      <h1 style="text-align: center">Entre em Contato</h1>
-      <footer>
+    <!-- Contatos Section -->
+    <footer>
+      <section id="Contatos">
+        <h1 style="text-align: center">Entre em Contato</h1>
         <p>
-          <span> Endereço<br /> </span>
+          <span class="contato">Endereço:<br /> </span>
           Rua Alcides Freitas<br />
           Edifício Mario vitorio Sala 33,<br />Bairro Por enquanto, Num. 3175
         </p>
         <p>
-          Email Address:
+          <span class="contato"> Email Address: </span>
+
           <br />
-          <a href="mailto:contato@arescritorio.com">contato@arescritorio.com</a>
+          <a class="email" href="mailto:arsolucoesjuridicas123@gmail.com"
+            >arsolucoesjuridicas123@gmail.com</a
+          >
         </p>
-      </footer>
-      <br />
-      <br />
-      <p style="text-align: center; font-size: 14px; margin-top: 60px">
-        &copy; 2024 AR Escritório de Advocacia & Acessoria Jurídica<br />
-      </p>
-    </section>
 
-    <div class="WhatsAppBtnContainer">
-      <img
-        class="WhatsAppBtn"
-        src="./imgs/WhatsAppLogo.png"
-        width="50px"
-        alt="WhatsApp"
-        draggable="false"
-      />
-      <div class="block"></div>
-      <span id="WhatsAppTxt">WhatsApp</span>
+        <p>
+          <span class="contato">Telefone:</span>
+          <br />
+          (86) 99459-4612
+        </p>
+        <br />
+        <br />
+        <img
+          id="logoFinal"
+          src="./imgs/LogoCompleta.png"
+          width="300px"
+          alt=""
+        />
+        <p style="text-align: center; font-size: 14px; margin-top: 180px">
+          &copy; 2025 AR Escritório de Advocacia & Acessoria Jurídica
+          <br />
+        </p>
+      </section>
+    </footer>
+
+    <!-- WhatsApp Link -->
+    <div class="WhatsAppBtnContainer" tabindex="0">
+      <a
+        href=" https://wa.me/5586994594612"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <img
+          class="WhatsAppBtn"
+          src="./imgs/WhatsAppLogo.png"
+          width="50px"
+          alt="WhatsApp"
+          draggable="false"
+        />
+        <!-- <div class="block"></div> -->
+        <span id="WhatsAppTxt">WhatsApp</span>
+      </a>
     </div>
-
     <script src="script.js"></script>
   </body>
 </html>

@@ -13,7 +13,8 @@
 }
 body {
   overflow-x: hidden;
+  top: 0;
   background-color: var(--cor-de-fundo);
-  height: 440vh;
+  height: 440dvh;
 }
 

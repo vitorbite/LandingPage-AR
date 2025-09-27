@@ -19,7 +19,6 @@ header.cabeçalho {
   background: var(--cor-secundaria);
   position: sticky;
   top: 0%;
-  bottom: auto;
   z-index: 999;
 }
 div#Home {
@@ -132,6 +131,13 @@ p {
   font-family: "Tenor Sans", sans-serif;
   font-weight: bold;
 }
+.Especialidades:hover {
+  transition: all 0.3s;
+  font-size: 101%;
+  background-color: #225c75;
+  border: 1px solid black;
+  cursor: pointer;
+}
 
 #fundoImg {
   width: 200px;
@@ -159,9 +165,33 @@ footer {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  margin-top: 0px;
+  flex-direction: column;
+  
   flex-wrap: wrap;
-  height: 150px;
+}
+#Contatos{
+  height: 100dvh;
+  margin-top: -90px;
+  padding: 20px 10px;
+}
+.contato {
+  font-weight: bold;
+  font-size: 14pt;
+  color: var(--cor-terciaria);
+}
+.email {
+  font-weight: bold;
+  font-size: 13pt;
+  text-decoration: none;
+  padding-bottom: 2px;
+  border-bottom: 2px solid #ddd;
+  color: #296f8d;
+  text-shadow: 2px 2px 2px black;
+}
+#logoFinal{
+  position: absolute;
+  left: 50%;
+  transform: translate(-52%, -20%);
 }
 
 @media (max-width: 600px) {
@@ -203,8 +233,11 @@ footer {
     font-size: 100%;
   }
   span.titulo {
-    font-size: 55%;
+    font-size: 65%;
     text-wrap: wrap;
+  }
+  #Contatos{
+    margin-top: 40px;
   }
 }
 @media (max-width: 450px) {
@@ -215,9 +248,13 @@ footer {
     transform: translateY(-50%);
     margin-top: 0;
   }
-  @media (max-width: 340px) {
+  @media (max-width: 360px) {
     span.titulo {
       display: none;
     }
+    .email {
+      font-size: 11pt;
   }
 }
+}
+
