@@ -1,6 +1,6 @@
 #Avaliações{
   padding: 20px 0;
-  height: 110dvh;
+  height: 110svh;
 }
 .carrossel-section {
   width: 100%;
@@ -122,10 +122,10 @@
 }
 @media (max-width: 600px) {
   body{
-    height: 427dvh;
+    height: 427svh;
   }
   #Avaliações{
-    height: 100dvh;
+    height: 100svh;
   }
   .carrossel-container {
     width: 100vw;
@@ -140,7 +140,7 @@
     width: 90vw;
     max-width: 95vw;
     height: 570px;
-    max-height: 90dvh;
+    max-height: 90svh;
     font-size: 0.95rem;
     padding: 10px 4px;
   }

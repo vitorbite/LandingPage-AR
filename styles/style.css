@@ -22,7 +22,7 @@ header.cabeçalho {
   z-index: 999;
 }
 div#Home {
-  height: 100dvh;
+  height: 100svh;
 }
 .logo {
   width: 130px;
@@ -104,7 +104,7 @@ span.titulo {
 }
 
 section {
-  height: 100dvh;
+  height: 100svh;
   border-top: 1px solid var(--cor-primaria);
   padding: 25px;
   padding-top: 65px;
@@ -171,7 +171,7 @@ footer {
   border-top: 1px solid var(--cor-primaria);
 }
 #Contatos{
-  height: 100dvh;
+  height: 100svh;
   margin-top: 0px;
   padding: 20px 10px;
   background-color: var(--cor-secundaria);
