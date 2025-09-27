@@ -1,0 +1,35 @@
+/* Ícone do WhatsApp */
+.WhatsAppBtnContainer {
+  position: fixed;
+  bottom: 20px;
+  width: 50px;
+  right: 30px;
+  z-index: 998;
+  border-radius: 50px 50px 50px 50px;
+  overflow: hidden;
+  transition: 1s;
+  cursor: pointer;
+}
+.WhatsAppBtn {
+  position: relative;
+  display: block;
+  z-index: 998;
+  background: #ddd;
+  border-radius: 50%;
+}
+span#WhatsAppTxt{
+    position: absolute;
+    top: 50%;
+    left: 70%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+}
+.WhatsAppBtnContainer:hover, .WhatsAppBtnContainer:focus{
+  background-color: #00cc3d;
+  width: 140px;
+  opacity: 1;
+  #WhatsAppTxt{
+    opacity: 1;
+    transition: 1s;
+  }
+}
