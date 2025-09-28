@@ -98,7 +98,7 @@ td:hover {
 @media (max-width: 500px) {
   td {
     width: 80vw;
-    font-size: 120%;
+    font-size: 112%;
     height: 100px;
     transition: height 0.3s;
     max-height: 250px;
