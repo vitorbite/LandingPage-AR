@@ -170,7 +170,7 @@ footer {
   background-color: var(--cor-de-fundo);
   border-top: 1px solid var(--cor-primaria);
 }
-#Contatos{
+#Contatos {
   height: 100svh;
   margin-top: 0px;
   padding: 20px 10px;
@@ -190,7 +190,7 @@ footer {
   color: #296f8d;
   text-shadow: 2px 2px 2px black;
 }
-#logoFinal{
+#logoFinal {
   position: absolute;
   left: 50%;
   transform: translate(-52%, -20%);
@@ -238,7 +238,7 @@ footer {
     font-size: 65%;
     text-wrap: wrap;
   }
-  #Contatos{
+  #Contatos {
     margin-top: 40px;
   }
 }
@@ -250,13 +250,15 @@ footer {
     transform: translateY(-50%);
     margin-top: 0;
   }
-  @media (max-width: 360px) {
-    span.titulo {
-      display: none;
-    }
-    .email {
-      font-size: 11pt;
+  .email {
+    font-size: 0.95rem;
   }
 }
+@media (max-width: 380px) {
+  span.titulo {
+    display: none;
+  }
+  .email {
+    font-size: 0.85rem;
+  }
 }
-
