@@ -17,10 +17,13 @@ section.sobreAdvogados{
     padding-left: 50px;
     border-left: 2px solid var(--cor-terciaria);
 }
+#sobreDrReginaldo{
+    margin-left: -210px;
+}
 @media screen and (min-width: 601px) and (max-width: 1024px) {
     .fotoAdvogados {
-        width: 250px;
-        height: 250px;
+        width: 200px;
+        height: 200px;
         margin-bottom: -40px;
     }
     section.sobreAdvogados {
@@ -32,12 +35,15 @@ section.sobreAdvogados{
     .sobre {
         text-align: center;
         padding: 0px 10px;
-        font-size: 90%;
+        font-size: 70%;
         border-left:none;
         }
     .advogados {
         font-size: 20pt;
     }
+    #sobreDrReginaldo{
+    margin-left: 0px;
+}
 }
 
 @media screen and (max-width: 600px) {
@@ -59,8 +65,12 @@ section.sobreAdvogados{
         font-size: 85%;
         border-left:none;
         }
+
     .advogados {
         font-size: 18pt;
     }
+    #sobreDrReginaldo{
+    margin-left: 0px;
+}
 
 }

@@ -142,12 +142,15 @@ p {
 /* Rodapé */
 footer {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
-  flex-direction: column;
-  flex-wrap: wrap;
+  flex-direction: row;
+  overflow-x: hidden;
   background-color: var(--cor-de-fundo);
   border-top: 1px solid var(--cor-primaria);
+}
+.barras{
+  height: 100vh;
 }
 #Contatos {
   height: 100vh;
@@ -158,6 +161,7 @@ footer {
 .contato {
   font-weight: bold;
   font-size: 14pt;
+  text-decoration: none;
   color: var(--cor-terciaria);
 }
 .email {
@@ -174,7 +178,11 @@ footer {
   left: 50%;
   transform: translate(-52%, -20%);
 }
-
+.telefone{
+  text-decoration: none;
+  border-bottom: 1px solid #fff;
+  padding-bottom: 2px;
+}
 @media (max-width: 600px) {
   .Menu {
     width: 100%;
@@ -216,6 +224,9 @@ footer {
   span.titulo {
     font-size: 65%;
     text-wrap: wrap;
+  }
+  .barras{
+    display: none;
   }
 }
 @media (max-width: 450px) {
