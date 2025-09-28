@@ -139,8 +139,8 @@
   .carrossel-slide {
     width: 90vw;
     max-width: 95vw;
-    height: 55vh;
-    max-height: 90svh;
+    height: auto;
+    max-height: 70svh;
     font-size: 0.95rem;
     padding: 10px 4px;
   }
@@ -152,11 +152,13 @@
   .carrossel-prev {
     left: 10px;
     top: 60%;
+    width: 20%;
     font-size: 2rem;
   }
   .carrossel-next {
     right: 10px;
     top: 60%;
+    width: 20%;
     font-size: 2rem;
 }
 }

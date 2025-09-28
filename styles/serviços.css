@@ -1,6 +1,7 @@
 #Serviços {
   height: 120svh;
   position: relative;
+  overflow-x: hidden;
 }
 table {
   margin: 25px auto;

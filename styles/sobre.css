@@ -13,6 +13,10 @@ section.sobreAdvogados{
     height: 330px;
     border-radius: 50%;
 }
+.sobre{
+    padding-left: 50px;
+    border-left: 2px solid var(--cor-terciaria);
+}
 @media screen and (min-width: 601px) and (max-width: 1024px) {
     .fotoAdvogados {
         width: 250px;
@@ -29,6 +33,7 @@ section.sobreAdvogados{
         text-align: center;
         padding: 0px 10px;
         font-size: 90%;
+        border-left:none;
         }
     .advogados {
         font-size: 20pt;
@@ -52,6 +57,7 @@ section.sobreAdvogados{
         text-align: center;
         padding: 0px 10px;
         font-size: 85%;
+        border-left:none;
         }
     .advogados {
         font-size: 18pt;
