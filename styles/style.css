@@ -150,7 +150,7 @@ footer {
   border-top: 1px solid var(--cor-primaria);
 }
 #Contatos {
-  height: 100svh;
+  height: 100vh;
   margin-top: 0px;
   padding: 20px 10px;
   background-color: var(--cor-secundaria);
