@@ -139,27 +139,6 @@ p {
   cursor: pointer;
 }
 
-#fundoImg {
-  width: 200px;
-  height: 300px;
-  border-radius: 30px;
-  clip-path: polygon(
-    0% 0%,
-    100% 0%,
-    100% 45%,
-    99% 49%,
-    98% 50%,
-    92% 56%,
-    90% 60%,
-    90% 90%,
-    89% 93%,
-    87% 95%,
-    80% 99%,
-    75% 100%,
-    0% 100%
-  );
-}
-
 /* Rodapé */
 footer {
   display: flex;
