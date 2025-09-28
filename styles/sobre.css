@@ -46,6 +46,7 @@ section.sobreAdvogados{
         gap: 0px;
         padding: 0px;
         margin: 0px;
+        height: 100vh;
     }
     .sobre {
         text-align: center;
