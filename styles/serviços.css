@@ -76,6 +76,10 @@ td:hover {
   left: 75%;
 }
 @media (max-width: 840px) {
+  #Serviços {
+    height: auto;
+    padding: 20px 0px;
+  }
   table {
     width: 100%;
   }
@@ -95,20 +99,21 @@ td:hover {
   td {
     width: 80vw;
     font-size: 120%;
-    height: 120px;
+    height: 100px;
     transition: height 0.3s;
-    max-height: 300px;
+    max-height: 250px;
   }
   td:focus {
-    height: 200px;
+    height: auto;
     margin-bottom: 10px;
   }
   td:focus span.hidden {
     opacity: 1;
-    max-height: 200px;
+    max-height: 220px;
   }
   tr {
     height: auto;
     flex-direction: column;
+    align-items: center;
   }
 }
