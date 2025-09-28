@@ -217,9 +217,6 @@ footer {
     font-size: 65%;
     text-wrap: wrap;
   }
-  #Contatos {
-    margin-top: 40px;
-  }
 }
 @media (max-width: 450px) {
   /* Ajustes de Tela para celulares */
