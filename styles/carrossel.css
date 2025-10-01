@@ -37,7 +37,7 @@
 .carrossel-slide {
   position: absolute;
   width: 300px;
-  height: 360px;
+  height: 390px;
   left: 0;
   top: 0;
   border-radius: 16px;
@@ -47,7 +47,7 @@
   align-items: center;
   justify-content: flex-start;
   text-align: center;
-  padding: 12px;
+  padding: 11px;
   box-sizing: border-box;
   overflow: hidden;
   background: #dedede;
