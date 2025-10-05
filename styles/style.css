@@ -149,7 +149,7 @@ footer {
   background-color: var(--cor-de-fundo);
   border-top: 1px solid var(--cor-primaria);
 }
-.barras{
+.barras {
   height: 100vh;
 }
 #Contatos {
@@ -178,10 +178,15 @@ footer {
   left: 50%;
   transform: translate(-52%, -20%);
 }
-.telefone{
+.telefone {
   text-decoration: none;
   border-bottom: 1px solid #fff;
   padding-bottom: 2px;
+}
+#copyright {
+  text-align: center;
+  font-size: 14px;
+  margin-top: 180px;
 }
 @media (max-width: 600px) {
   .Menu {
@@ -225,7 +230,7 @@ footer {
     font-size: 65%;
     text-wrap: wrap;
   }
-  .barras{
+  .barras {
     display: none;
   }
 }

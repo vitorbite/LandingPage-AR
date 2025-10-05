@@ -10,4 +10,5 @@ function abrirServiço(s) {
 function fecharServiço() {
   serviço.style.display = "none";
   document.body.style.overflowY = "scroll";
+  document.getElementById('Serviços').style.overflowY = 'hidden';
 }
