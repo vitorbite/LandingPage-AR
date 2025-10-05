@@ -1,7 +1,57 @@
 #Serviços {
-  height: 120svh;
+  height: 140svh;
   position: relative;
   overflow-x: hidden;
+}
+div.res{
+  background-color: var(--cor-primaria);
+  width: 99vw;
+  color: #040404;
+  padding: 50px 250px;
+  position: fixed;
+  top: 0%;
+  left: 50%;
+  translate: -50%;
+  z-index: 999;
+  height: 100svh;
+  overflow-y: auto;
+  animation: abrirServiço 0.5s linear;
+  display: none;
+}
+strong{
+  color: #040404;
+  text-align: center;
+}
+.textoServiço{
+  color: var(--cor-secundaria);
+  text-align: justify;
+  text-indent: 50px;
+  margin-top: 10px;
+}
+@keyframes abrirServiço {
+  from{
+    opacity: 0;
+  }
+}
+button.fechar{
+  width: 4rem;
+  max-width: 70px;
+  background-color: var(--cor-secundaria);
+  color: var(--cor-terciaria);
+  border: 2px solid var(--cor-terciaria);
+  position: relative;
+  left: 110%;
+}
+button.fechar:hover{
+  background-color: var(--cor-primaria);
+  color: #040404;
+  border-color: #040404;
+}
+button.fechar:nth-of-type(2){
+  max-width: 150px;
+  width: 10rem;
+  left: 50%;
+  transform: translate(-50%, 60px);
 }
 table {
   margin: 25px auto;
@@ -65,6 +115,10 @@ td:hover {
   z-index: 9;
   transition: all 0.6s;
   height: 140px;
+  span.tituloServiços{
+    color: yellow;
+    text-shadow: 2px 2px 3px #000;
+  }
 }
 .Logo2 {
   position: absolute;
@@ -76,10 +130,22 @@ td:hover {
 #rightLogo {
   left: 75%;
 }
+.leftLogo2{
+  right: 80%;
+  top: 50%;
+}
+.rightLogo2{
+  left: 80%;
+  top: 50%;
+}
 @media (max-width: 840px) {
   #Serviços {
-    height: auto;
+    height: 100svh;
     padding: 20px 0px;
+  }
+  div.res{
+    padding: 50px 40px;
+    width: 100vw;
   }
   table {
     width: 100%;
@@ -95,6 +161,10 @@ td:hover {
   .Logo2 {
     display: none;
   }
+  button.fechar{
+    left: 85%;
+    top: -5%;
+  }
 }
 @media (max-width: 500px) {
   td {
@@ -104,13 +174,8 @@ td:hover {
     transition: height 0.3s;
     max-height: 250px;
   }
-  td:focus {
-    height: auto;
-    margin-bottom: 10px;
-  }
-  td:focus span.hidden {
-    opacity: 1;
-    max-height: 220px;
+  span.hidden{
+    display: none;
   }
   tr {
     height: auto;

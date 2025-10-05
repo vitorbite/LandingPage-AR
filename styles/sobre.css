@@ -1,82 +1,82 @@
-section.sobreAdvogados{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    height: auto;
-    min-height: 100vh;
+section.sobreAdvogados {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  height: auto;
+  min-height: 100vh;
 }
-.fotoAdvogados{
-    position: relative;
-    left: 0%;
-    /* border: 5px solid var(--cor-terciaria); */
-    z-index: -1;
-    width: 430px;
-    height: 430px;
-    border-radius: 50%;
+.fotoAdvogados {
+  position: relative;
+  left: 0%;
+  /* border: 5px solid var(--cor-terciaria); */
+  z-index: -1;
+  width: 430px;
+  height: 430px;
+  border-radius: 50%;
 }
-.sobre{
-    padding-left: 50px;
-    max-width: 450px;
-    height: auto;
-    text-transform: uppercase;
-    border-left: 2px solid var(--cor-terciaria);
+.sobre {
+  padding-left: 50px;
+  max-width: 450px;
+  height: auto;
+  text-transform: lowercase capitalize;
+  border-left: 2px solid var(--cor-terciaria);
 }
-#sobreDrReginaldo{
-    padding-left: 122px;
+#sobreDrReginaldo {
+  padding-left: 122px;
 }
 @media screen and (min-width: 601px) and (max-width: 1024px) {
-    .fotoAdvogados {
-        width: 200px;
-        height: 200px;
-        margin-bottom: -40px;
-    }
-    section.sobreAdvogados {
-        flex-direction: column;
-        gap: 0px;
-        padding: 0px;
-        margin: 0px;
-    }
-    .sobre {
-        text-align: center;
-        padding: 0px 10px;
-        font-size: 70%;
-        border-left:none;
-        }
-    .advogados {
-        font-size: 20pt;
-    }
-    #sobreDrReginaldo{
+  .fotoAdvogados {
+    width: 200px;
+    height: 200px;
+    margin-bottom: -40px;
+  }
+  section.sobreAdvogados {
+    flex-direction: column;
+    gap: 0px;
+    padding: 0px;
+    margin: 0px;
+  }
+  .sobre {
+    text-align: center;
+    padding: 0px 10px;
+    font-size: 70%;
+    border-left: none;
+  }
+  .advogados {
+    font-size: 20pt;
+  }
+  #sobreDrReginaldo {
     margin-left: 0px;
-}
+    padding: 0;
+  }
 }
 
 @media screen and (max-width: 600px) {
-    .fotoAdvogados {
-        width: 320px;
-        height: 320px;
-        margin-bottom: 0px;
-        margin-top: 20px;
-    }
-    section.sobreAdvogados {
-        flex-direction: column;
-        gap: 0px;
-        padding: 15px;
-        margin: 0px;
-        height: auto;
-    }
-    .sobre {
-        text-align: center;
-        padding: 0px 10px;
-        font-size: 85%;
-        border-left:none;
-        }
+  .fotoAdvogados {
+    width: 320px;
+    height: 320px;
+    margin-bottom: 0px;
+    margin-top: 20px;
+  }
+  section.sobreAdvogados {
+    flex-direction: column;
+    gap: 0px;
+    padding: 15px;
+    margin: 0px;
+    height: auto;
+  }
+  .sobre {
+    text-align: center;
+    padding: 0px 10px;
+    font-size: 85%;
+    border-left: none;
+  }
 
-    .advogados {
-        font-size: 18pt;
-    }
-    #sobreDrReginaldo{
+  .advogados {
+    font-size: 18pt;
+  }
+  #sobreDrReginaldo {
     padding-left: 0px;
-}
-
+  }
 }
