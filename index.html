@@ -30,16 +30,16 @@
       <img src="./imgs/Logo.png" alt="Logo" class="logo" draggable="false" />
       <nav class="Menu">
         <button onclick="Home()">Home</button>
-        <button onclick="Scroll('Sobre')">Sobre nós</button>
         <button onclick="Scroll('Serviços')">Serviços</button>
+        <button onclick="Scroll('Sobre')">Sobre nós</button>
         <button onclick="Scroll('Contatos')">Contatos</button>
       </nav>
     </header>
     <div class="menu2" id="menu2">
       <ul class="menu2">
         <li class="menu2" onclick="Home()">Home</li>
-        <li class="menu2" onclick="Scroll('Sobre')">Sobre</li>
         <li class="menu2" onclick="Scroll('Serviços')">Serviços</li>
+        <li class="menu2" onclick="Scroll('Sobre')">Sobre</li>
         <li class="menu2" onclick="Scroll('Contatos')">Contato</li>
       </ul>
     </div>
@@ -63,83 +63,6 @@
         >
       </div>
     </div>
-
-    <!-- Sobre Section -->
-    <section id="Sobre" class="sobreAdvogados">
-      <img src="imgs/1.png" alt="Dr. Reginaldo" class="fotoAdvogados" />
-      <div class="sobre" id="sobreDrReginaldo">
-        <h1 class="advogados">
-          Dr. Reginaldo Alves <br />de<br />
-          Carvalho<br />
-        </h1>
-        <span> Advogado </span>
-        <p>
-          Advogado Militante desde <br />2022. Pós-graduado em <br />
-          Direito Previdenciário, <br />Direito Eleitoral. Atua <br />
-          diretamente nas áreas de <br />Direito do Trabalho e <br />
-          Processo Trabalhista, <br />Direito de Família e <br />
-          Sucessões, além de <br />Mediação de Conflitos.
-        </p>
-        <input
-          type="button"
-          value="Ver Especialidades"
-          class="Especialidades"
-          onclick="Scroll('Serviços')"
-        />
-      </div>
-    </section>
-
-    <!-- Dra. Andreza Section -->
-    <section class="sobreAdvogados">
-      <!-- <img src="./imgs/FundoImg.png" alt="" id="fundoImg" /> -->
-      <img src="imgs/2.png" class="fotoAdvogados" alt="Dra. Andreza" />
-      <div class="sobre" id="sobreDraAndreza">
-        <h1 class="advogados">
-          Dra. Andreza Alexandra <br />
-          Soares Sousa<br />
-        </h1>
-        <span> Advogada </span>
-        <p>
-          Advogada Militante <br />
-          desde 2004. Mediadora <br />Judicial. Professora <br />Universitária
-          desde <br />2005, tendo lecionado<br />
-          em diversas faculdades <br />no Piauí e Maranhão.<br />Pós-Graduação
-          em <br />Direito e Processo do <br />Trabalho.
-        </p>
-        <input
-          type="button"
-          value="Ver Especialidades"
-          class="Especialidades"
-          onclick="Scroll('Serviços')"
-        />
-      </div>
-    </section>
-
-    <section class="sobreAdvogados">
-      <img src="imgs/3.png" class="fotoAdvogados" alt="Dra. Andreza" />
-      <div class="sobre" id="sobreDrAllanGomes">
-        <h1 class="advogados">Dr. Allan Gomes Dos Reis <br /></h1>
-        <span> Advogado </span>
-        <p>
-          Sou advogado militante desde 2015, com uma sólida especialização em
-          Direito do Trabalho e Processo Trabalhista, além de Direito
-          Previdenciário e Processo Previdenciário, obtida na UniFacema. Minhas
-          áreas de atuação incluem, mas não se limitam a, Direito do Trabalho,
-          Direito Bancário e Direito de Família. Seja no campo das relações
-          laborais, onde busco garantir os direitos dos trabalhadores e
-          empregadores, seja na esfera previdenciária, auxiliando cidadãos a
-          acessar seus direitos, ou ainda nas questões relacionadas à família,
-          meu compromisso é prestar um serviço jurídico de excelência, orientado
-          pela ética e pela busca pela justiça.
-        </p>
-        <input
-          type="button"
-          value="Ver Especialidades"
-          class="Especialidades"
-          onclick="Scroll('Serviços')"
-        />
-      </div>
-    </section>
 
     <!-- Serviços Section -->
     <section id="Serviços">
@@ -242,6 +165,7 @@
           alt="logo2"
         />
       </div>
+      <!-- Seção do Direito Previdenciário -->
       <div id="previdenciário" class="res">
         <img
           class="Logo2 leftLogo2"
@@ -371,7 +295,7 @@
           alt="logo2"
         />
       </div>
-
+      <!-- Seção do Direito do Consumidor -->
       <div id="consumidor" class="res">
         <img
           class="Logo2 leftLogo2"
@@ -436,7 +360,99 @@
           alt="logo2"
         />
       </div>
+      <!-- Seção do Direito de Família -->
+      <div id="Família" class="res">
+        <img
+          class="Logo2 leftLogo2"
+          src="imgs/Logo2.png"
+          width="250px"
+          alt="logo2"
+        />
+        <button class="fechar" onclick="fecharServiço()">X</button>
+        <h3>
+          <strong
+            >Navegue pelas Questões de Família com Segurança Jurídica</strong
+          >
+        </h3>
+        <hr />
 
+        <p class="textoServiço">
+          Decisões que envolvem a família, como o <strong>divórcio</strong> ou o
+          fim de uma união, são sempre delicadas e exigem um suporte legal que
+          vá além da técnica: é preciso sensibilidade, experiência e estratégia.
+          Nosso escritório é especialista em Direito de Família, com uma vasta e
+          sólida experiência em conduzir esses processos complexos, priorizando
+          o bem-estar emocional e financeiro de nossos clientes.
+        </p>
+
+        <p class="textoServiço">
+          Entendemos que cada história é única. Por isso, oferecemos um
+          atendimento personalizado para garantir que seus direitos e os de seus
+          filhos sejam plenamente protegidos, transformando momentos de crise em
+          soluções justas e definitivas.
+        </p>
+        <br />
+        <br />
+        <h3>
+          <strong
+            >Nossas Áreas de Atuação e a Força da Nossa Experiência:</strong
+          >
+        </h3>
+        <p class="textoServiço">
+          Nossa atuação concentra-se em três pilares essenciais, sempre buscando
+          o melhor resultado para você:
+        </p>
+        <br />
+
+        <p class="textoServiço">
+          <strong> • Divórcio Judicial e Extrajudicial (em Cartório):</strong>
+          Auxiliamos você a escolher a melhor via para o término do casamento,
+          seja de forma consensual (mais rápida e menos desgastante) ou
+          litigiosa (quando há desacordo). Nossa experiência garante a partilha
+          justa de bens e o encerramento do vínculo com segurança.
+        </p>
+        <p class="textoServiço">
+          <strong>
+            • Pensão Alimentícia (Fixação, Revisão e Execução): </strong
+          >A pensão alimentícia é um pilar do Direito de Família. Atuamos tanto
+          para fixar um valor justo (com base na necessidade de quem recebe e na
+          possibilidade de quem paga), quanto para revisar o valor, caso a
+          situação financeira de uma das partes mude. Também somos rigorosos na
+          execução (cobrança) de pensões em atraso.
+        </p>
+
+        <!-- ----- -->
+        <p class="textoServiço">
+          <strong> • Reconhecimento e Dissolução de União Estável: </strong>
+          A união estável gera os mesmos direitos e deveres do casamento, mas
+          exige o correto reconhecimento legal (ou a dissolução) para proteger o
+          patrimônio e definir direitos de herança ou pensão.
+        </p>
+        <p class="textoServiço">
+          <strong> • Guarda e Regime de Convivência (Visitas):</strong>
+          O foco principal é o melhor interesse da criança. Trabalhamos para
+          estabelecer um regime de guarda (compartilhada ou unilateral) e de
+          convivência (visitas) que seja funcional, saudável e equilibrado para
+          todos os envolvidos.
+        </p>
+        <p class="textoServiço">
+          <strong
+            >Não enfrente as questões de Direito de Família sozinho.
+          </strong>
+          Nossa vasta experiência é sua aliada na busca por um recomeço seguro e
+          justo. Se você precisa de orientação sobre divórcio, pensão ou união
+          estável, entre em contato para agendar uma consulta.
+        </p>
+        <!-- ----- -->
+       
+        <button class="fechar" onclick="fecharServiço()">FECHAR</button>
+        <img
+          class="Logo2 rightLogo2"
+          src="imgs/Logo2.png"
+          width="250px"
+          alt="logo2"
+        />
+      </div>
       <img
         id="leftLogo"
         class="Logo2"
@@ -472,40 +488,12 @@
               produtos, serviços, contratos e práticas abusivas.
             </span>
           </td>
-          <td tabindex="0" onclick="abrirServiço('Civil')">
-            <span class="tituloServiços"> DIREITO CIVIL </span>
-            <span class="hidden">
-              <br />
-              Soluções para questões de contratos, obrigações, responsabilidade
-              civil, posse e propriedade.
-            </span>
-          </td>
-        </tr>
-        <tr>
-          <td tabindex="0">
-            <span class="tituloServiços"> PROCESSO TRABALHISTA </span>
-            <span class="hidden">
-              <br />
-              Representação em todas as fases do processo, desde a audiência
-              inicial até os recursos nos tribunais superiores.
-            </span>
-          </td>
           <td tabindex="0" onclick="abrirServiço('Família')">
             <span class="tituloServiços"> DIREITO DE FAMÍLIA </span>
             <span class="hidden">
               <br />
               Questões de divórcio, pensão alimentícia, guarda de filhos,
               inventários, partilha de bens e testamentos.
-            </span>
-          </td>
-        </tr>
-        <tr>
-          <td tabindex="0">
-            <span class="tituloServiços"> MEDIAÇÃO DE CONFLITOS </span>
-            <span class="hidden">
-              <br />
-              Solução de disputas de forma amigável e eficiente, buscando o
-              consenso entre as partes fora do ambiente judicial.
             </span>
           </td>
         </tr>
@@ -517,6 +505,83 @@
         width="300px"
         alt="logo2"
       />
+    </section>
+
+    <!-- Sobre Section -->
+    <section id="Sobre" class="sobreAdvogados">
+      <img src="imgs/1.png" alt="Dr. Reginaldo" class="fotoAdvogados" />
+      <div class="sobre" id="sobreDrReginaldo">
+        <h1 class="advogados">
+          Dr. Reginaldo Alves <br />de<br />
+          Carvalho<br />
+        </h1>
+        <span> Advogado </span>
+        <p>
+          Advogado Militante desde <br />2022. Pós-graduado em <br />
+          Direito Previdenciário, <br />Direito Eleitoral. Atua <br />
+          diretamente nas áreas de <br />Direito do Trabalho e <br />
+          Processo Trabalhista, <br />Direito de Família e <br />
+          Sucessões, além de <br />Mediação de Conflitos.
+        </p>
+        <!-- <input
+          type="button"
+          value="Ver Especialidades"
+          class="Especialidades"
+          onclick="Scroll('Serviços')"
+        /> -->
+      </div>
+    </section>
+
+    <!-- Dra. Andreza Section -->
+    <section class="sobreAdvogados">
+      <!-- <img src="./imgs/FundoImg.png" alt="" id="fundoImg" /> -->
+      <img src="imgs/2.png" class="fotoAdvogados" alt="Dra. Andreza" />
+      <div class="sobre" id="sobreDraAndreza">
+        <h1 class="advogados">
+          Dra. Andreza Alexandra <br />
+          Soares Sousa<br />
+        </h1>
+        <span> Advogada </span>
+        <p>
+          Advogada Militante <br />
+          desde 2004. Mediadora <br />Judicial. Professora <br />Universitária
+          desde <br />2005, tendo lecionado<br />
+          em diversas faculdades <br />no Piauí e Maranhão.<br />Pós-Graduação
+          em <br />Direito e Processo do <br />Trabalho.
+        </p>
+        <!-- <input
+          type="button"
+          value="Ver Especialidades"
+          class="Especialidades"
+          onclick="Scroll('Serviços')"
+        /> -->
+      </div>
+    </section>
+
+    <section class="sobreAdvogados">
+      <img src="imgs/3.png" class="fotoAdvogados" alt="Dra. Andreza" />
+      <div class="sobre" id="sobreDrAllanGomes">
+        <h1 class="advogados">Dr. Allan Gomes Dos Reis <br /></h1>
+        <span> Advogado </span>
+        <p>
+          Sou advogado militante desde 2015, com uma sólida especialização em
+          Direito do Trabalho e Processo Trabalhista, além de Direito
+          Previdenciário e Processo Previdenciário, obtida na UniFacema. Minhas
+          áreas de atuação incluem, mas não se limitam a, Direito do Trabalho,
+          Direito Bancário e Direito de Família. Seja no campo das relações
+          laborais, onde busco garantir os direitos dos trabalhadores e
+          empregadores, seja na esfera previdenciária, auxiliando cidadãos a
+          acessar seus direitos, ou ainda nas questões relacionadas à família,
+          meu compromisso é prestar um serviço jurídico de excelência, orientado
+          pela ética e pela busca pela justiça.
+        </p>
+        <!-- <input
+          type="button"
+          value="Ver Especialidades"
+          class="Especialidades"
+          onclick="Scroll('Serviços')"
+        /> -->
+      </div>
     </section>
 
     <!-- Avaliações Section -->

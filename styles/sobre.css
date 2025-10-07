@@ -1,7 +1,7 @@
 section.sobreAdvogados {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-items: center;
   height: auto;
   min-height: 100vh;
