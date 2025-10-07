@@ -23,6 +23,10 @@ header.cabeçalho {
 }
 div#Home {
   height: 100svh;
+  background: url(../imgs/ImgFundo.jpeg) no-repeat;
+  background-size: cover;
+  padding-top: 50px;
+  margin-top: -50px;
 }
 .logo {
   width: 130px;
@@ -89,7 +93,18 @@ button:hover {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  background-color: rgba(0, 22, 0, 0.7);
+  animation: aparecer 1.6s ease-in-out forwards;
 }
+@keyframes aparecer {
+  from{
+    opacity: 0;
+  }
+  to{
+    opacity: 1;
+  }
+}
+
 #logoCentral {
   margin-top: -25%;
 }
