@@ -1,5 +1,5 @@
 #Serviços {
-  height: 100svh;
+  height: 100vh;
   position: relative;
   overflow-x: hidden;
 }
@@ -55,8 +55,10 @@ button.fechar:nth-of-type(2){
 }
 table {
   margin: 25px auto;
-  position: relative;
-  top: 15%;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%);
   width: 50vw;
 }
 tr {
