@@ -212,7 +212,7 @@ footer {
     height: 80%;
     display: block;
     position: relative;
-    left: -25%;
+    left: -40%;
     top: 50%;
     padding: 5px;
     font-size: 20pt;
@@ -224,7 +224,7 @@ footer {
     color: #020202;
   }
   .logo {
-    left: -5%;
+    display: none;
   }
   div#Home {
     padding: 25px;
