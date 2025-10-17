@@ -74,8 +74,8 @@ tr {
 span.tituloServiços {
   font-family: "Fraunces", serif;
   font-weight: bold;
-  color: rgb(212, 209, 36);
-  text-shadow: 1px 1px 0px #222;
+  color: #040404;
+  /* text-shadow: 1px 1px 0px #222; */
 }
 td {
   font-family: "Tenor Sans", sans-serif;
