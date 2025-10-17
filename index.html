@@ -55,8 +55,9 @@
           draggable="false"
         />
         <h1 class="titulo">
-          DR. REGINALDO CARVALHO <br />&<br />
-          DR. ANDREZA ALEXANDRA
+          DRA. ANDREZA ALEXANDRA
+          <br />&<br />
+          DR. REGINALDO CARVALHO
         </h1>
         <span class="titulo" id="advocacia"
           >ADVOCACIA & CONSULTORIA JURÍDICA</span
@@ -412,8 +413,7 @@
           justa de bens e o encerramento do vínculo com segurança.
         </p>
         <p class="textoServiço">
-          <strong>
-            • Pensão Alimentícia (Fixação, Revisão e Execução): </strong
+          <strong> • Pensão Alimentícia (Fixação, Revisão e Execução): </strong
           >A pensão alimentícia é um pilar do Direito de Família. Atuamos tanto
           para fixar um valor justo (com base na necessidade de quem recebe e na
           possibilidade de quem paga), quanto para revisar o valor, caso a
@@ -444,7 +444,7 @@
           estável, entre em contato para agendar uma consulta.
         </p>
         <!-- ----- -->
-       
+
         <button class="fechar" onclick="fecharServiço()">FECHAR</button>
         <img
           class="Logo2 rightLogo2"
@@ -453,58 +453,48 @@
           alt="logo2"
         />
       </div>
-      <img
-        id="leftLogo"
-        class="Logo2"
-        src="imgs/Logo2.png"
-        width="300px"
-        alt="logo2"
-      />
       <table>
         <tr>
-          <td tabindex="0" onclick="abrirServiço('trabalho')">
+          <td tabindex="0">
             <span class="tituloServiços">DIREITO DO TRABALHO</span>
-            <span class="hidden">
+            <span class="textoExtra">
               <br />
               Defesa dos direitos de trabalhadores e empregadores, consultoria e
               atuação em processos trabalhistas.
             </span>
+            <input type="button" value="Saiba mais" class="SaibaMais" onclick="abrirServiço('trabalho')"/>
           </td>
-          <td tabindex="0" onclick="abrirServiço('previdenciário')">
+          <td tabindex="0" >
             <span class="tituloServiços">DIREITO PREVIDENCIÁRIO </span>
-            <span class="hidden">
+            <span class="textoExtra">
               <br />
               Aposentadorias, pensões, auxílios e outros benefícios junto ao
               INSS, tanto na esfera administrativa quanto judicial.
             </span>
+            <input type="button" value="Saiba mais" class="SaibaMais" onclick="abrirServiço('previdenciário')"/>
           </td>
         </tr>
         <tr>
-          <td tabindex="0" onclick="abrirServiço('consumidor')">
+          <td tabindex="0" >
             <span class="tituloServiços"> DIREITO DO CONSUMIDOR </span>
-            <span class="hidden">
+            <span class="textoExtra">
               <br />
               Atuação na defesa dos direitos do consumidor em questões de
               produtos, serviços, contratos e práticas abusivas.
             </span>
+            <input type="button" value="Saiba mais" class="SaibaMais" onclick="abrirServiço('consumidor')"/>
           </td>
-          <td tabindex="0" onclick="abrirServiço('Família')">
+          <td tabindex="0">
             <span class="tituloServiços"> DIREITO DE FAMÍLIA </span>
-            <span class="hidden">
+            <span class="textoExtra">
               <br />
               Questões de divórcio, pensão alimentícia, guarda de filhos,
               inventários, partilha de bens e testamentos.
             </span>
+            <input type="button" value="Saiba mais" class="SaibaMais" onclick="abrirServiço('Família')" />
           </td>
         </tr>
       </table>
-      <img
-        id="rightLogo"
-        class="Logo2"
-        src="imgs/Logo2.png"
-        width="300px"
-        alt="logo2"
-      />
     </section>
 
     <!-- Sobre Section -->
