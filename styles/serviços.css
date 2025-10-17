@@ -54,7 +54,8 @@ button.fechar:nth-of-type(2) {
   transform: translate(-50%, 60px);
 }
 table {
-  margin: 5px auto;
+  margin: -50px auto;
+  margin-bottom: 10px;
   position: absolute;
   top: 30%;
   left: 50%;
@@ -67,14 +68,14 @@ tr {
   flex-wrap: wrap;
   position: relative;
   height: 200px;
-  margin-top: -10px;
+  margin-top: 10px;
   /* margin-bottom: 70px; */
 }
 span.tituloServiços {
   font-family: "Fraunces", serif;
   font-weight: bold;
-  color: yellow;
-  text-shadow: 2px 2px 3px #222;
+  color: rgb(212, 209, 36);
+  text-shadow: 1px 1px 0px #222;
 }
 td {
   font-family: "Tenor Sans", sans-serif;
@@ -94,7 +95,7 @@ td {
   border: 2px solid #040404;
   color: var(--cor-secundaria);
   border-radius: 20px;
-  height: 175px;
+  height: 190px;
   overflow: hidden;
   transition: height 0.6s, box-shadow 0.3s;
 }
@@ -107,6 +108,7 @@ span.textoExtra {
   border-radius: 10px;
   padding: 10px 20px;
   cursor: pointer;
+  margin-top: 20px;
 }
 .SaibaMais:hover{
   background-color: var(--cor-primaria);
@@ -166,12 +168,11 @@ span.textoExtra {
   td {
     width: 80vw;
     font-size: 112%;
-    height: 100px;
+    height: auto;
+    
     transition: height 0.3s;
     max-height: 250px;
-  }
-  span.textoExtra {
-    display: none;
+    width: 90vw;
   }
   tr {
     height: auto;
