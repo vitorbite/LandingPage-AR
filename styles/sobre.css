@@ -88,20 +88,25 @@ p.textoSobre{
   }
 }
 @media screen and (max-width: 500px) {
+  .sobreAdvogados{
+    flex-direction: column;
+    justify-content: center;
+  }
   .Coluna{
-    margin-right: 15px;
+    margin-bottom: 30px;
   }
   .fotoAdvogados{
-    width: 110px;
-    height: 110px;
+    width: 250px;
+    height: 250px;
   }
   .sobre{
     font-size: 8pt;
   }
   p.textoSobre{
-    font-size: 9pt;
+    font-size: 10pt;
+    text-align: center;
   }
   span.profissão{
-    font-size: 10pt;
+    font-size: 12pt;
   }
 }
