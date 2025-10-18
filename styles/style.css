@@ -169,6 +169,7 @@ footer {
   height: 100vh;
 }
 #Contatos {
+  border: none;
   overflow-y: hidden;
   height: 100vh;
   margin-top: 0px;
