@@ -70,6 +70,16 @@
   opacity: 0.7;
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
 }
+#imgSetaEsquerda{
+  position: relative;
+  top: -35px;
+  left: -7px;
+}
+#imgSetaDireita{
+  position: relative;
+  top: -41px;
+  left: -6px;
+}
 .carrossel-prev,
 .carrossel-next {
   opacity: 0;
