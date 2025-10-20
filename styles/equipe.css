@@ -44,6 +44,9 @@ section.Sobre {
   background-color: rgba(0, 0, 0, 0.7);
   text-align: center;
 }
+.areaSobreNos>h3{
+  text-align: center;
+}
 .areaSobreNos > p > strong {
   color: var(--cor-primaria);
 }
