@@ -161,20 +161,24 @@ footer {
   justify-content: center;
   align-items: center;
   flex-direction: row;
-  overflow-x: hidden;
+  overflow: hidden;
+  height: 100vh;
   background-color: var(--cor-de-fundo);
   border-top: 1px solid var(--cor-primaria);
 }
 .barras {
-  height: 100vh;
+  height: 110svh;
 }
 #Contatos {
   border: none;
   overflow-y: hidden;
   height: 100vh;
-  margin-top: 0px;
   padding: 20px 10px;
   background-color: var(--cor-secundaria);
+}
+#EntreEmContato{
+  position: relative;
+  top: 35px;
 }
 .contato {
   font-weight: bold;
@@ -208,6 +212,9 @@ footer {
   font-size: 14px;
 }
 @media (max-width: 600px) {
+  body{
+    height: 660svh;
+  }
   .Menu {
     width: 100%;
     display: none;

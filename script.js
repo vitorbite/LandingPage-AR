@@ -5,11 +5,10 @@ function Home() {
   });
 }
 function Scroll(area) {
-  const myElement = document.getElementById(area);
-  myElement.scrollIntoView({
-    behavior: "smooth",
-    block: "start",
-  });
+const el = document.getElementById(area);
+  if (!el) return;
+  const top = Math.max(0, el.getBoundingClientRect().top + window.pageYOffset - 35);
+  window.scrollTo({ top, behavior: "smooth" });
 }
 
 const icone = document.getElementById("icone");

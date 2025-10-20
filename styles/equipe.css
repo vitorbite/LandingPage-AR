@@ -1,8 +1,8 @@
-div.Coluna{
+div.Coluna {
   display: flex;
   flex-direction: column;
 }
-span.profissão{
+span.profissão {
   text-align: center;
   font-size: 15pt;
   margin-top: 15px;
@@ -18,6 +18,7 @@ span.profissão{
   padding-bottom: 60px;
   border-bottom: 1px solid var(--cor-primaria);
 }
+
 .fotoAdvogados {
   position: relative;
   left: 0%;
@@ -27,6 +28,24 @@ span.profissão{
   height: 430px;
   border-radius: 50%;
 }
+section.Sobre {
+  height: auto;
+  min-height: 120svh;
+  display: flex;
+  justify-content: center;
+  background: url("../assets/BackgroundSobre.png") no-repeat;
+  background-position: 50% 0%;
+  background-size: cover;
+}
+.areaSobreNos {
+  width: 80vw;
+  padding: 10px;
+  margin-top: 20px;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+.areaSobreNos > p > strong {
+  color: var(--cor-primaria);
+}
 .sobre {
   padding-left: 50px;
   max-width: 600px;
@@ -35,7 +54,7 @@ span.profissão{
   text-transform: lowercase capitalize;
   border-left: 2px solid var(--cor-terciaria);
 }
-p.textoSobre{
+p.textoSobre {
   text-align: left;
   margin-top: 25px;
   width: 500px;
@@ -88,25 +107,25 @@ p.textoSobre{
   }
 }
 @media screen and (max-width: 500px) {
-  .sobreAdvogados{
+  .sobreAdvogados {
     flex-direction: column;
     justify-content: center;
   }
-  .Coluna{
-    margin-bottom: 30px;
+  .Coluna {
+    margin: 35px;
   }
-  .fotoAdvogados{
+  .fotoAdvogados {
     width: 250px;
     height: 250px;
   }
-  .sobre{
+  .sobre {
     font-size: 8pt;
   }
-  p.textoSobre{
+  p.textoSobre {
     font-size: 10pt;
     text-align: center;
   }
-  span.profissão{
+  span.profissão {
     font-size: 12pt;
   }
 }

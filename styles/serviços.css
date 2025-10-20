@@ -3,6 +3,9 @@
   position: relative;
   overflow-x: hidden;
 }
+#Serviços>h1{
+  margin-bottom: 15px;
+}
 div.res {
   background-color: var(--cor-primaria);
   width: 99vw;
@@ -139,6 +142,9 @@ span.textoExtra {
   #Serviços {
     height: 130vh;
     padding: 20px 0px;
+  }
+  #Serviços>h1{
+    margin: 15px;
   }
   div.res {
     padding: 50px 40px;

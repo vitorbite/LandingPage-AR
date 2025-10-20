@@ -18,7 +18,7 @@
     <script src="https://unpkg.com/akar-icons-fonts"></script>
     <link rel="stylesheet" href="./styles/theme.css" />
     <link rel="stylesheet" href="./styles/style.css" />
-    <link rel="stylesheet" href="./styles/sobre.css" />
+    <link rel="stylesheet" href="./styles/equipe.css" />
     <link rel="stylesheet" href="./styles/serviços.css" />
     <link rel="stylesheet" href="./styles/menu2.css" />
     <link rel="stylesheet" href="./styles/carrossel.css" />
@@ -32,14 +32,16 @@
         <button onclick="Home()">Home</button>
         <button onclick="Scroll('Serviços')">Serviços</button>
         <button onclick="Scroll('Sobre')">Sobre nós</button>
-        <button onclick="Scroll('Contatos')">Contatos</button>
+        <button onclick="Scroll('NossaEquipe')">Nossa equipe</button>
+        <button onclick="Scroll('EntreEmContato')">Contatos</button>
       </nav>
     </header>
     <div class="menu2" id="menu2">
       <ul class="menu2">
         <li class="menu2" onclick="Home()">Home</li>
         <li class="menu2" onclick="Scroll('Serviços')">Serviços</li>
-        <li class="menu2" onclick="Scroll('Sobre')">Sobre</li>
+        <li class="menu2" onclick="Scroll('Sobre')">Sobre nós</li>
+        <li class="menu2" onclick="Scroll('NossaEquipe')">Nossa equipe</li>
         <li class="menu2" onclick="Scroll('Contatos')">Contato</li>
       </ul>
     </div>
@@ -517,10 +519,58 @@
       </table>
     </section>
 
-    <!-- Sobre Section -->
+    <section id="Sobre" class="Sobre">
+      <div class="areaSobreNos">
+        <h1>
+          AR Soluções Jurídicas: Seu Parceiro Estratégico em Questões Legais
+        </h1>
+        <p>
+          Bem-vindos à AR Soluções Jurídicas, um escritório de advocacia
+          concebido para oferecer um suporte legal abrangente e de excelência no
+          dinâmico mercado de trabalho.
+        </p>
+
+        <p>
+          Com uma <strong>ampla área de atuação</strong>, nosso escritório está
+          preparado para atender às mais diversas e complexas necessidades
+          jurídicas, tanto no âmbito consultivo quanto no contencioso.
+          Entendemos que cada desafio exige uma análise meticulosa e uma
+          estratégia personalizada. Por isso, dedicamo-nos a fornecer soluções
+          eficazes e inovadoras, focadas em resguardar os interesses e alcançar
+          os objetivos de nossos clientes.
+        </p>
+
+        <p>
+          Nosso trabalho é pautado em dois pilares inegociáveis: a
+          <strong>atuação ética</strong> e o
+          <strong>compromisso inabalável com nossos clientes</strong>.
+          Acreditamos que a transparência, a integridade e o respeito são a base
+          de qualquer relação de confiança duradoura. Na AR Soluções Jurídicas,
+          você encontrará advogados dedicados que não apenas conhecem a lei, mas
+          se comprometem em aplicá-la com rigor, diligência e total dedicação ao
+          seu caso.
+        </p>
+
+        <p>
+          Seja qual for a sua demanda — da orientação preventiva à representação
+          em litígios complexos —, a AR Soluções Jurídicas é o seu parceiro
+          estratégico para navegar com segurança e sucesso no ambiente legal.
+          Conte conosco para transformar desafios em oportunidades.
+        </p>
+
+        <p>
+          <strong>
+            AR Soluções Jurídicas: Ética, Compromisso e Soluções para o seu
+            Direito.
+          </strong>
+        </p>
+      </div>
+    </section>
+
+    <!-- Nossa Equipe Section -->
 
     <!-- Dra. Andreza Section -->
-    <section id="Sobre" class="sobreAdvogados">
+    <section id="NossaEquipe" class="sobreAdvogados">
       <!-- <img src="./imgs/FundoImg.png" alt="" id="fundoImg" /> -->
       <div class="Coluna">
         <h1>Nossa Equipe</h1>
@@ -532,15 +582,12 @@
           </div>
 
           <div class="sobre" id="sobreDraAndreza">
-            <h1 class="advogados">
-              Dra. Andreza Alexandra Soares Sousa<br />
-            </h1>
+            <h1 class="advogados">Dra. Andreza Alexandra Soares Sousa<br /></h1>
             <p class="textoSobre">
-              Advogada Militante 
-              desde 2004. Mediadora Judicial. Professora
-              Universitária desde 2005, tendo lecionado
-              em diversas faculdades no Piauí e Maranhão.Pós-Graduação
-              em Direito e Processo do Trabalho.
+              Advogada Militante desde 2004. Mediadora Judicial. Professora
+              Universitária desde 2005, tendo lecionado em diversas faculdades
+              no Piauí e Maranhão.Pós-Graduação em Direito e Processo do
+              Trabalho.
             </p>
             <!-- <input
             type="button"
@@ -557,16 +604,12 @@
             <span class="profissão"> Advogado </span>
           </div>
           <div class="sobre" id="sobreDrReginaldo">
-            <h1 class="advogados">
-              Dr. Reginaldo Alves de
-              Carvalho<br />
-            </h1>
+            <h1 class="advogados">Dr. Reginaldo Alves de Carvalho<br /></h1>
 
             <p class="textoSobre">
-              Advogado Militante desde 2022. Pós-graduado em 
-              Direito Previdenciário, Direito Eleitoral. Atua 
-              diretamente nas áreas de Direito do Trabalho e 
-              Processo Trabalhista, Direito de Família e 
+              Advogado Militante desde 2022. Pós-graduado em Direito
+              Previdenciário, Direito Eleitoral. Atua diretamente nas áreas de
+              Direito do Trabalho e Processo Trabalhista, Direito de Família e
               Sucessões, além de Mediação de Conflitos.
             </p>
             <!-- <input
@@ -690,44 +733,44 @@
     </section>
 
     <!-- Contatos Section -->
-    <footer>
-      <img class="barras" src="./imgs/lado esquerdo.PNG" alt="" />
-      <section id="Contatos">
-        <h1>Entre em Contato</h1>
-        <p>
-          <span class="contato">Endereço:<br /> </span>
-          Rua Alcides Freitas<br />
-          Edifício Mario vitorio Sala 33,<br />Bairro Por enquanto, Num. 3175
-        </p>
-        <p>
-          <span class="contato"> Email Address: </span>
+      <footer>
+        <img class="barras" src="./imgs/lado esquerdo.PNG" alt="" />
+        <section id="Contatos">
+          <h1 id="EntreEmContato">Entre em Contato</h1>
+          <p>
+            <span class="contato">Endereço:<br /> </span>
+            Rua Alcides Freitas<br />
+            Edifício Mario vitorio Sala 33,<br />Bairro Por enquanto, Num. 3175
+          </p>
+          <p>
+            <span class="contato"> Email Address: </span>
 
-          <br />
-          <a class="email" href="mailto:arsolucoesjuridicas123@gmail.com"
-            >arsolucoesjuridicas123@gmail.com</a
-          >
-        </p>
+            <br />
+            <a class="email" href="mailto:arsolucoesjuridicas123@gmail.com"
+              >arsolucoesjuridicas123@gmail.com</a
+            >
+          </p>
 
-        <p>
-          <span class="contato">Telefone:</span>
+          <p>
+            <span class="contato">Telefone:</span>
+            <br />
+            <a class="telefone" href="tel:(86) 99459-4612">(86) 99459-4612</a>
+          </p>
           <br />
-          <a class="telefone" href="tel:(86) 99459-4612">(86) 99459-4612</a>
-        </p>
-        <br />
-        <br />
-        <img
-          id="logoFinal"
-          src="./imgs/LogoCompleta.png"
-          width="300px"
-          alt=""
-        />
-        <p id="copyright">
-          &copy; 2025 AR Escritório de Advocacia & Acessoria Jurídica
           <br />
-        </p>
-      </section>
-      <img class="barras" src="./imgs/lado direito.PNG" alt="" />
-    </footer>
+          <img
+            id="logoFinal"
+            src="./imgs/LogoCompleta.png"
+            width="300px"
+            alt=""
+          />
+          <p id="copyright">
+            &copy; 2025 AR Escritório de Advocacia & Acessoria Jurídica
+            <br />
+          </p>
+        </section>
+        <img class="barras" src="./imgs/lado direito.PNG" alt="" />
+      </footer>
 
     <!-- WhatsApp Link -->
     <div class="WhatsAppBtnContainer" tabindex="0">
