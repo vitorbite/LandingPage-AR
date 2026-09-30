@@ -2,799 +2,849 @@
 <html lang="pt-BR">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>AR</title>
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="./favicon-16x16.png"
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>AR Soluções Jurídicas · Escritório de Advocacia</title>
+    <meta
+      name="description"
+      content="AR Soluções Jurídicas: advocacia e consultoria em Direito do Trabalho, Previdenciário, do Consumidor e de Família. Atendimento ético, técnico e humanizado."
     />
-    <meta name="msapplication-TileColor" content="#ffffff" />
-    <meta name="theme-color" content="#ffffff" />
-    <style>
-      @import url("https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Tenor+Sans&display=swap");
-    </style>
-    <script src="https://unpkg.com/akar-icons-fonts"></script>
-    <link rel="stylesheet" href="./styles/theme.css" />
-    <link rel="stylesheet" href="./styles/style.css" />
-    <link rel="stylesheet" href="./styles/equipe.css" />
-    <link rel="stylesheet" href="./styles/serviços.css" />
-    <link rel="stylesheet" href="./styles/menu2.css" />
-    <link rel="stylesheet" href="./styles/carrossel.css" />
-    <link rel="stylesheet" href="./styles/WhatsAppIcon.css" />
+    <meta name="theme-color" content="#0a1c13" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/img/favicon-32.png" />
+    <link rel="apple-touch-icon" href="./assets/img/apple-touch-icon.png" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="pt_BR" />
+    <meta property="og:title" content="AR Soluções Jurídicas · Escritório de Advocacia" />
+    <meta
+      property="og:description"
+      content="Direito do Trabalho, Previdenciário, do Consumidor e de Família. Ética, compromisso e soluções para o seu direito."
+    />
+    <meta property="og:image" content="./assets/img/og-image.jpg" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..700;1,9..144,300..600&family=Manrope:wght@400;500;600;700&display=swap"
+    />
+    <link rel="preload" as="image" href="./assets/img/hero.webp" media="(min-width: 721px)" />
+    <link rel="preload" as="image" href="./assets/img/hero-mobile.webp" media="(max-width: 720px)" />
+    <link rel="stylesheet" href="./styles/main.css" />
+    <script>
+      document.documentElement.classList.add("js");
+    </script>
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "LegalService",
+        "name": "AR Soluções Jurídicas",
+        "description": "Escritório de advocacia e consultoria jurídica.",
+        "telephone": "+55 86 99459-4612",
+        "email": "arsolucoesjuridicas123@gmail.com",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Rua Alcides Freitas, 3175 — Edifício Mario Vitorio, Sala 33",
+          "addressRegion": "PI",
+          "addressCountry": "BR"
+        },
+        "areaServed": "BR",
+        "knowsAbout": [
+          "Direito do Trabalho",
+          "Direito Previdenciário",
+          "Direito do Consumidor",
+          "Direito de Família"
+        ]
+      }
+    </script>
   </head>
+
   <body>
-    <header class="cabeçalho">
-      <i class="ai-three-line-horizontal icone" id="icone"></i>
-      <img src="./imgs/Logo.png" alt="Logo" class="logo" draggable="false" />
-      <nav class="Menu">
-        <button onclick="Home()">Home</button>
-        <button onclick="Scroll('Serviços')">Serviços</button>
-        <button onclick="Scroll('Sobre')">Sobre nós</button>
-        <button onclick="Scroll('NossaEquipe')">Nossa equipe</button>
-        <button onclick="Scroll('EntreEmContato')">Contatos</button>
-      </nav>
-    </header>
-    <div class="menu2" id="menu2">
-      <ul class="menu2">
-        <li class="menu2" onclick="Home()">Home</li>
-        <li class="menu2" onclick="Scroll('Serviços')">Serviços</li>
-        <li class="menu2" onclick="Scroll('Sobre')">Sobre nós</li>
-        <li class="menu2" onclick="Scroll('NossaEquipe')">Nossa equipe</li>
-        <li class="menu2" onclick="Scroll('Contatos')">Contato</li>
-      </ul>
-    </div>
-
-    <!-- Home Section -->
-    <div id="Home" class="Home">
-      <div class="Container">
-        <img
-          src="./imgs/Logo.png"
-          width="160px"
-          alt=""
-          id="logoCentral"
-          draggable="false"
-        />
-        <h1 class="titulo">
-          DRA. ANDREZA ALEXANDRA
-          <br />&<br />
-          DR. REGINALDO CARVALHO
-        </h1>
-        <span class="titulo" id="advocacia"
-          >ADVOCACIA & CONSULTORIA JURÍDICA</span
-        >
-      </div>
-    </div>
-
-    <!-- Serviços Section -->
-    <section id="Serviços">
-      <h1>Serviços</h1>
-
-      <!-- Seção do Direito do Trabalho -->
-      <div id="trabalho" class="res">
-        <img
-          class="Logo2 leftLogo2"
-          src="imgs/Logo2.png"
-          width="250px"
-          alt="logo2"
-        />
-        <button class="fechar" onclick="fecharServiço()">X</button>
-        <h3>
-          <strong> A Defesa do Trabalhador é a Nossa Missão </strong>
-        </h3>
-        <hr />
-
-        <p class="textoServiço">
-          Quando seus direitos no ambiente de trabalho são desrespeitados, você
-          precisa de um aliado que entenda profundamente a legislação e lute
-          incansavelmente pela sua justiça. Nosso escritório é especializado no
-          Direito do Trabalho, com foco exclusivo na defesa do Empregado, e
-          carrega uma vasta e sólida experiência em garantir que a lei seja
-          cumprida a seu favor.
-        </p>
-
-        <p class="textoServiço">
-          Ao longo dos anos, construímos um histórico de sucesso representando
-          trabalhadores em diversas situações, dominando as complexidades da
-          Consolidação das Leis do Trabalho (CLT) e das decisões mais recentes
-          dos Tribunais. Se você se sentiu lesado ou teve seus direitos
-          violados, estamos prontos para atuar com
-          <strong> rigor técnico e dedicação. </strong>
-        </p>
-        <br />
-        <br />
-        <h3>
-          <strong
-            >Sua Proteção Jurídica em Detalhes: Exemplos da Nossa
-            Expertise</strong
-          >
-        </h3>
-        <p class="textoServiço">
-          Nossa atuação abrange todos os aspectos da relação de trabalho, desde
-          o início do contrato até a sua rescisão, com foco em:
-        </p>
-        <br />
-
-        <p class="textoServiço">
-          <strong> • Verbas Rescisórias Não Pagas ou Incorretas:</strong> O
-          contrato de trabalho terminou, mas a empresa não efetuou o pagamento
-          correto de
-          <strong>
-            aviso prévio, férias, 13º salário, multa de 40% do FGTS
-          </strong>
-          ou outras parcelas? Nós entramos com a ação para garantir que você
-          receba cada centavo devido.
-        </p>
-        <p class="textoServiço">
-          <strong> • Jornada de Trabalho e Horas Extras: </strong>
-          Você trabalha além da jornada legal, não usufrui integralmente do
-          intervalo intrajornada (almoço) ou não recebe o adicional noturno?
-          Lutamos pelo pagamento correto de todas as suas
-          <strong> horas extras, </strong>
-          com seus devidos reflexos.
-        </p>
-
-        <p class="textoServiço">
-          <strong> • Assédio Moral e Dano Moral no Trabalho:</strong>
-          Se você sofreu humilhações, perseguições ou condições degradantes que
-          afetaram sua saúde física ou mental, buscamos a indenização por danos
-          morais cabível, responsabilizando a empresa por sua conduta.
-        </p>
-        <p class="textoServiço">
-          <strong> • Acidente de Trabalho e Doença Ocupacional:</strong>
-          Se sua saúde foi prejudicada devido às condições de trabalho ou a um
-          acidente, atuamos para garantir sua
-          <strong>
-            estabilidade, indenização por danos materiais e morais
-          </strong>
-          e o correto encaminhamento previdenciário.
-        </p>
-
-        <p class="textoServiço">
-          <strong
-            >Sua luta por dignidade e justiça no trabalho é a nossa
-            prioridade.</strong
-          >
-          Não se conforme com a violação dos seus direitos. Nossa vasta
-          experiência é sua maior garantia de uma defesa eficaz. Entre em
-          contato e agende uma consulta.
-        </p>
-        <button class="fechar" onclick="fecharServiço()">FECHAR</button>
-        <img
-          class="Logo2 rightLogo2"
-          src="imgs/Logo2.png"
-          width="250px"
-          alt="logo2"
-        />
-      </div>
-      <!-- Seção do Direito Previdenciário -->
-      <div id="previdenciário" class="res">
-        <img
-          class="Logo2 leftLogo2"
-          src="imgs/Logo2.png"
-          width="250px"
-          alt="logo2"
-        />
-        <button class="fechar" onclick="fecharServiço()">X</button>
-        <h3>
-          <strong>Conquiste seu Futuro com a Segurança Previdenciária</strong>
-        </h3>
-        <hr />
-
-        <p class="textoServiço">
-          O acesso à Aposentadoria e a outros Benefícios do INSS é um direito,
-          mas a burocracia do sistema pode ser um obstáculo frustrante. Nosso
-          escritório é especializado em Direito Previdenciário e está aqui para
-          simplificar esse processo, garantindo que você receba o benefício
-          correto, no menor tempo possível.
-        </p>
-
-        <p class="textoServiço">
-          Com uma vasta e comprovada experiência na área, atuamos de forma
-          estratégica, desde a análise do seu tempo de contribuição até a
-          contestação de negativas na Justiça. Não deixe que a complexidade da
-          lei diminua seu futuro.
-        </p>
-        <br />
-        <br />
-        <h3>
-          <strong
-            >Nossa Expertise em Benefícios Previdenciários e Sociais</strong
-          >
-        </h3>
-        <p class="textoServiço">
-          Nossa atuação concentra-se em três pilares essenciais, sempre buscando
-          o melhor resultado para você:
-        </p>
-        <br />
-
-        <p class="textoServiço">
-          <strong> 1. Aposentadorias (Urbana e Rural)</strong> Seja pela idade,
-          tempo de contribuição ou regras de transição, a concessão de
-          aposentadoria exige um planejamento minucioso. Nossa experiência
-          garante que cada período trabalhado seja contado, buscando o melhor
-          valor do benefício.
-        </p>
-        <p class="textoServiço">
-          <strong> • Exemplos de Atuação: </strong>
-        </p>
-
-        <!-- ----- -->
-        <p class="textoServiço">
-          ◦ Aposentadoria por Tempo de Contribuição: Revisão e inclusão de
-          períodos especiais (insalubridade/periculosidade) não reconhecidos
-          pelo INSS.
-        </p>
-        <p class="textoServiço">
-          ◦ Aposentadoria por Idade: Análise e comprovação do tempo de carência
-          e da atividade rural (segurado especial) para garantir o benefício.
-        </p>
-        <p class="textoServiço">
-          ◦ Planejamento Previdenciário: Simulação e orientação para que o
-          segurado saiba o momento exato de se aposentar com o maior valor
-          possível.
-        </p>
-        <!-- ----- -->
-        <p class="textoServiço">
-          <strong>
-            2. Auxílio-Doença, Aposentadoria por Incapacidade e
-            Acidentes</strong
-          >
-          Quando a doença ou o acidente te impedem de trabalhar, você precisa de
-          suporte imediato. Atuamos na solicitação e, principalmente, na
-          reversão de negativas do Auxílio por Incapacidade Temporária (antigo
-          Auxílio-Doença) e na concessão da Aposentadoria por Incapacidade
-          Permanente.
-        </p>
-
-        <p class="textoServiço">
-          <strong> • Exemplos de Atuação:</strong>
-        </p>
-        <!-- ------- -->
-        <p class="textoServiço">
-          ◦ Contestação Judicial: Reversão de perícias médicas negativas do
-          INSS, através de laudos técnicos e ações judiciais eficazes.
-        </p>
-
-        <p class="textoServiço">
-          ◦ Acidentes de Trabalho: Reconhecimento do nexo causal e obtenção de
-          benefícios acidentários, muitas vezes mais vantajosos para o segurado.
-        </p>
-        <!-- ------- -->
-        <p class="textoServiço">
-          <strong>
-            3. Benefício de Prestação Continuada (BPC/LOAS) e Pensão</strong
-          >
-          Garantimos que pessoas em situação de vulnerabilidade e dependentes de
-          segurados falecidos tenham acesso à proteção social.
-        </p>
-        <p class="textoServiço">• Exemplos de Atuação:</p>
-
-        <!-- ------- -->
-        <p class="textoServiço">
-          ◦ BPC/LOAS: Assessoria completa para pessoas com deficiência e idosos
-          de baixa renda, comprovando a miserabilidade e a incapacidade de forma
-          legal.
-        </p>
-        <p class="textoServiço">
-          ◦ Pensão por Morte: Rápido reconhecimento da qualidade de dependente
-          para garantir o benefício após o falecimento do segurado.
-        </p>
-        <!-- ------- -->
-
-        <p class="textoServiço">
-          <strong>Não enfrente o INSS sozinho. </strong>
-          Nossa vasta experiência é o seu maior trunfo para transformar a
-          incerteza em segurança financeira. Se você teve seu pedido negado ou
-          precisa planejar seu futuro, fale conosco hoje mesmo e dê o primeiro
-          passo rumo ao seu benefício.
-        </p>
-        <button class="fechar" onclick="fecharServiço()">FECHAR</button>
-        <img
-          class="Logo2 rightLogo2"
-          src="imgs/Logo2.png"
-          width="250px"
-          alt="logo2"
-        />
-      </div>
-      <!-- Seção do Direito do Consumidor -->
-      <div id="consumidor" class="res">
-        <img
-          class="Logo2 leftLogo2"
-          src="imgs/Logo2.png"
-          width="250px"
-          alt="logo2"
-        />
-        <button class="fechar" onclick="fecharServiço()">X</button>
-        <h3>
-          <strong> Seus Direitos de Consumidor Estão em Boas Mãos </strong>
-        </h3>
-        <hr />
-        <p class="textoServiço">
-          Na complexa relação entre consumidores e fornecedores, é fundamental
-          ter ao seu lado uma assessoria jurídica especializada para garantir
-          que seus direitos sejam integralmente respeitados. Nosso escritório
-          possui uma vasta e sólida experiência no Direito do Consumidor,
-          dedicando-se a proteger você contra práticas abusivas, falhas na
-          prestação de serviços e problemas com produtos. Com um histórico
-          comprovado de sucesso, atuamos em diversas frentes, oferecendo uma
-          defesa robusta e estratégica. Entendemos as nuances do Código de
-          Defesa do Consumidor (CDC) e utilizamos esse conhecimento para
-          resolver seus problemas com a máxima eficiência. Áreas de Atuação e
-          Exemplos da Nossa Experiência:
-        </p>
-        <p class="textoServiço">
-          <strong> • Problemas com Produtos e Serviços Defeituosos: </strong>
-          Você comprou um eletrodoméstico que apresentou defeito logo após o uso
-          ou contratou um serviço que não foi entregue conforme o prometido? Nós
-          agimos para garantir a troca do produto, a restituição do valor pago
-          ou o cumprimento forçado da oferta.
-        </p>
-        <p class="textoServiço">
-          <strong> • Direito Aéreo e de Viagens: </strong>
-          Cancelamentos de voos, atrasos, overbooking (preterição de embarque) e
-          extravio de bagagem podem gerar grandes transtornos. Nossa experiência
-          garante que você seja indenizado pelos danos morais e materiais
-          sofridos.
-        </p>
-
-        <p class="textoServiço">
-          <strong> • Questões Bancárias e Financeiras: </strong>
-          Cobranças indevidas, tarifas abusivas, negativação injusta no
-          SPC/Serasa, empréstimos fraudulentos ou falha na segurança de
-          transações (phishing). Defendemos você contra abusos de instituições
-          financeiras.
-        </p>
-        <p class="textoServiço">
-          <strong> Sua tranquilidade é a nossa prioridade.</strong> Nossa
-          experiência não é apenas uma estatística, é a certeza de que seu caso
-          será tratado com o
-          <strong> rigor técnico e a dedicação </strong> necessários para
-          alcançar a melhor solução. Se você se sentiu lesado em uma relação de
-          consumo, <strong> fale conosco.</strong> Estamos prontos para
-          transformar sua frustração em justiça.
-        </p>
-        <button class="fechar" onclick="fecharServiço()">FECHAR</button>
-        <img
-          class="Logo2 rightLogo2"
-          src="imgs/Logo2.png"
-          width="250px"
-          alt="logo2"
-        />
-      </div>
-      <!-- Seção do Direito de Família -->
-      <div id="Família" class="res">
-        <img
-          class="Logo2 leftLogo2"
-          src="imgs/Logo2.png"
-          width="250px"
-          alt="logo2"
-        />
-        <button class="fechar" onclick="fecharServiço()">X</button>
-        <h3>
-          <strong
-            >Navegue pelas Questões de Família com Segurança Jurídica</strong
-          >
-        </h3>
-        <hr />
-
-        <p class="textoServiço">
-          Decisões que envolvem a família, como o <strong>divórcio</strong> ou o
-          fim de uma união, são sempre delicadas e exigem um suporte legal que
-          vá além da técnica: é preciso sensibilidade, experiência e estratégia.
-          Nosso escritório é especialista em Direito de Família, com uma vasta e
-          sólida experiência em conduzir esses processos complexos, priorizando
-          o bem-estar emocional e financeiro de nossos clientes.
-        </p>
-
-        <p class="textoServiço">
-          Entendemos que cada história é única. Por isso, oferecemos um
-          atendimento personalizado para garantir que seus direitos e os de seus
-          filhos sejam plenamente protegidos, transformando momentos de crise em
-          soluções justas e definitivas.
-        </p>
-        <br />
-        <br />
-        <h3>
-          <strong
-            >Nossas Áreas de Atuação e a Força da Nossa Experiência:</strong
-          >
-        </h3>
-        <p class="textoServiço">
-          Nossa atuação concentra-se em três pilares essenciais, sempre buscando
-          o melhor resultado para você:
-        </p>
-        <br />
-
-        <p class="textoServiço">
-          <strong> • Divórcio Judicial e Extrajudicial (em Cartório):</strong>
-          Auxiliamos você a escolher a melhor via para o término do casamento,
-          seja de forma consensual (mais rápida e menos desgastante) ou
-          litigiosa (quando há desacordo). Nossa experiência garante a partilha
-          justa de bens e o encerramento do vínculo com segurança.
-        </p>
-        <p class="textoServiço">
-          <strong> • Pensão Alimentícia (Fixação, Revisão e Execução): </strong
-          >A pensão alimentícia é um pilar do Direito de Família. Atuamos tanto
-          para fixar um valor justo (com base na necessidade de quem recebe e na
-          possibilidade de quem paga), quanto para revisar o valor, caso a
-          situação financeira de uma das partes mude. Também somos rigorosos na
-          execução (cobrança) de pensões em atraso.
-        </p>
-
-        <!-- ----- -->
-        <p class="textoServiço">
-          <strong> • Reconhecimento e Dissolução de União Estável: </strong>
-          A união estável gera os mesmos direitos e deveres do casamento, mas
-          exige o correto reconhecimento legal (ou a dissolução) para proteger o
-          patrimônio e definir direitos de herança ou pensão.
-        </p>
-        <p class="textoServiço">
-          <strong> • Guarda e Regime de Convivência (Visitas):</strong>
-          O foco principal é o melhor interesse da criança. Trabalhamos para
-          estabelecer um regime de guarda (compartilhada ou unilateral) e de
-          convivência (visitas) que seja funcional, saudável e equilibrado para
-          todos os envolvidos.
-        </p>
-        <p class="textoServiço">
-          <strong
-            >Não enfrente as questões de Direito de Família sozinho.
-          </strong>
-          Nossa vasta experiência é sua aliada na busca por um recomeço seguro e
-          justo. Se você precisa de orientação sobre divórcio, pensão ou união
-          estável, entre em contato para agendar uma consulta.
-        </p>
-        <!-- ----- -->
-
-        <button class="fechar" onclick="fecharServiço()">FECHAR</button>
-        <img
-          class="Logo2 rightLogo2"
-          src="imgs/Logo2.png"
-          width="250px"
-          alt="logo2"
-        />
-      </div>
-      <table>
-        <tr>
-          <td tabindex="0">
-            <span class="tituloServiços">DIREITO DO TRABALHO</span>
-            <span class="textoExtra">
-              <br />
-              Defesa dos direitos de trabalhadores e empregadores, consultoria e
-              atuação em processos trabalhistas.
-            </span>
-            <input
-              type="button"
-              value="Saiba mais"
-              class="SaibaMais"
-              onclick="abrirServiço('trabalho')"
-            />
-          </td>
-          <td tabindex="0">
-            <span class="tituloServiços">DIREITO PREVIDENCIÁRIO </span>
-            <span class="textoExtra">
-              <br />
-              Aposentadorias, pensões, auxílios e outros benefícios junto ao
-              INSS, tanto na esfera administrativa quanto judicial.
-            </span>
-            <input
-              type="button"
-              value="Saiba mais"
-              class="SaibaMais"
-              onclick="abrirServiço('previdenciário')"
-            />
-          </td>
-        </tr>
-        <tr>
-          <td tabindex="0">
-            <span class="tituloServiços"> DIREITO DO CONSUMIDOR </span>
-            <span class="textoExtra">
-              <br />
-              Atuação na defesa dos direitos do consumidor em questões de
-              produtos, serviços, contratos e práticas abusivas.
-            </span>
-            <input
-              type="button"
-              value="Saiba mais"
-              class="SaibaMais"
-              onclick="abrirServiço('consumidor')"
-            />
-          </td>
-          <td tabindex="0">
-            <span class="tituloServiços"> DIREITO DE FAMÍLIA </span>
-            <span class="textoExtra">
-              <br />
-              Questões de divórcio, pensão alimentícia, guarda de filhos,
-              inventários, partilha de bens e testamentos.
-            </span>
-            <input
-              type="button"
-              value="Saiba mais"
-              class="SaibaMais"
-              onclick="abrirServiço('Família')"
-            />
-          </td>
-        </tr>
-      </table>
-    </section>
-
-    <section id="Sobre" class="Sobre">
-      <div class="areaSobreNos">
-        <h3>
-          AR Soluções Jurídicas: Seu Parceiro Estratégico em Questões Legais
-        </h3>
-        <p>
-          Bem-vindos à AR Soluções Jurídicas, um escritório de advocacia
-          concebido para oferecer um suporte legal abrangente e de excelência no
-          dinâmico mercado de trabalho.
-        </p>
-
-        <p>
-          Com uma ampla área de atuação, nosso escritório está
-          preparado para atender às mais diversas e complexas necessidades
-          jurídicas, tanto no âmbito consultivo quanto no contencioso.
-          Entendemos que cada desafio exige uma análise meticulosa e uma
-          estratégia personalizada. Por isso, dedicamo-nos a fornecer soluções
-          eficazes e inovadoras, focadas em resguardar os interesses e alcançar
-          os objetivos de nossos clientes.
-        </p>
-
-        <p>
-          Nosso trabalho é pautado em dois pilares inegociáveis: a
-          atuação ética e o
-          compromisso inabalável com nossos clientes.
-          Acreditamos que a transparência, a integridade e o respeito são a base
-          de qualquer relação de confiança duradoura. Na AR Soluções Jurídicas,
-          você encontrará advogados dedicados que não apenas conhecem a lei, mas
-          se comprometem em aplicá-la com rigor, diligência e total dedicação ao
-          seu caso.
-        </p>
-
-        <p>
-          Seja qual for a sua demanda, da orientação preventiva à representação
-          em litígios complexos, a AR Soluções Jurídicas é o seu parceiro
-          estratégico para navegar com segurança e sucesso no ambiente legal.
-          Conte conosco para transformar desafios em oportunidades.
-        </p>
-
-        <p>
-          <strong>
-            AR Soluções Jurídicas: Ética, Compromisso e Soluções para o seu
-            Direito.
-          </strong>
-        </p>
-      </div>
-    </section>
-
-    <!-- Nossa Equipe Section -->
-
-    <!-- Dra. Andreza Section -->
-    <section id="NossaEquipe" class="sobreAdvogados">
-      <!-- <img src="./imgs/FundoImg.png" alt="" id="fundoImg" /> -->
-      <div class="Coluna">
-        <h1>Nossa Equipe</h1>
-
-        <div class="sobreAdvogados">
-          <div class="Coluna">
-            <img src="imgs/2.png" class="fotoAdvogados" alt="Dra. Andreza" />
-            <span class="profissão"> Advogada </span>
-          </div>
-
-          <div class="sobre" id="sobreDraAndreza">
-            <h1 class="advogados">Dra. Andreza Alexandra Soares Sousa<br /></h1>
-            <p class="textoSobre">
-              Advogada Militante desde 2004. Mediadora Judicial. Professora
-              Universitária desde 2005, tendo lecionado em diversas faculdades
-              no Piauí e Maranhão.Pós-Graduação em Direito e Processo do
-              Trabalho.
-            </p>
-            <!-- <input
-            type="button"
-          value="Ver Especialidades"
-          class="Especialidades"
-          onclick="Scroll('Serviços')"
-          /> -->
-          </div>
-        </div>
-
-        <div class="sobreAdvogados">
-          <div class="Coluna">
-            <img src="imgs/1.png" alt="Dr. Reginaldo" class="fotoAdvogados" />
-            <span class="profissão"> Advogado </span>
-          </div>
-          <div class="sobre" id="sobreDrReginaldo">
-            <h1 class="advogados">Dr. Reginaldo Alves de Carvalho<br /></h1>
-
-            <p class="textoSobre">
-              Advogado Militante desde 2022. Pós-graduado em Direito
-              Previdenciário, Direito Eleitoral. Atua diretamente nas áreas de
-              Direito do Trabalho e Processo Trabalhista, Direito de Família e
-              Sucessões, além de Mediação de Conflitos.
-            </p>
-            <!-- <input
-          type="button"
-          value="Ver Especialidades"
-          class="Especialidades"
-          onclick="Scroll('Serviços')"
-        /> -->
-          </div>
-        </div>
-        <div class="sobreAdvogados">
-          <div class="Coluna">
-            <img src="imgs/3.png" class="fotoAdvogados" alt="Dra. Andreza" />
-            <span class="profissão"> Advogado </span>
-          </div>
-          <div class="sobre" id="sobreDrAllanGomes">
-            <h1 class="advogados">Dr. Allan Gomes Dos Reis <br /></h1>
-            <p class="textoSobre">
-              Sou advogado militante desde 2015, com uma sólida especialização
-              em Direito do Trabalho e Processo Trabalhista, além de Direito
-              Previdenciário e Processo Previdenciário, obtida na UniFacema.
-              Minhas áreas de atuação incluem, mas não se limitam a, Direito do
-              Trabalho, Direito Bancário e Direito de Família. Seja no campo das
-              relações laborais, onde busco garantir os direitos dos
-              trabalhadores e empregadores, seja na esfera previdenciária,
-              auxiliando cidadãos a acessar seus direitos, ou ainda nas questões
-              relacionadas à família, meu compromisso é prestar um serviço
-              jurídico de excelência, orientado pela ética e pela busca pela
-              justiça.
-            </p>
-            <!-- <input
-          type="button"
-          value="Ver Especialidades"
-          class="Especialidades"
-          onclick="Scroll('Serviços')"
-        /> -->
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Avaliações Section -->
-    <section id="Avaliações">
-      <h1>Avaliações dos Clientes</h1>
-      <div id="Carrossel" class="carrossel-section">
-        <!-- Carrossel de Avaliações -->
-        <div class="carrossel-container">
-          <!-- Slide 1 -->
-          <div class="carrossel-slide ativo">
-            <img
-              src="imgs/Cliente1.jpeg"
-              class="carrossel-img"
-              alt="Exemplo 1"
-            />
-            <h3>Avaliação de Júlio</h3>
-            <img
-              class="Estrelas"
-              src="./imgs/Avaliações.png"
-              width="100px"
-              alt="Avaliação"
-            />
-            <p class="depoimento">
-              Conquistei minha vitória com o apoio do AR Escritório de Advocacia
-              & Assessoria Jurídica! Atendimento impecável, respeito,
-              transparência e resultado! ⚖️✨ Minha causa trabalhista foi
-              resolvida com excelência. Recomendo com total confiança! 💼
-              #JustiçaFeita #Profissionalismo.
-            </p>
-          </div>
-
-          <!-- Slide 2 -->
-          <div class="carrossel-slide">
-            <img
-              src="imgs/Cliente2.jpeg"
-              class="carrossel-img"
-              alt="Exemplo 2"
-            />
-            <h3>Avaliação de José Orlando</h3>
-            <img
-              class="Estrelas"
-              src="./imgs/Avaliações.png"
-              width="100px"
-              alt="Avaliação"
-            />
-            <p class="depoimento">
-              Gratidão ao AR Escritório de Advocacia & Assessoria Jurídica! 🙌
-              Atendimento incrível, recepção acolhedora e uma equipe nota 10! ⚖️
-              Minha causa trabalhista foi resolvida com rapidez e
-              profissionalismo. Recomendo demais! 💼 #JustiçaComExcelência
-              #AdvocaciaQueResolve.
-            </p>
-          </div>
-
-          <!-- Slide 3 -->
-          <div class="carrossel-slide">
-            <img
-              src="imgs/Cliente3.jpeg"
-              class="carrossel-img"
-              alt="Exemplo 3"
-            />
-            <h3>Avaliação de Ângela Maria</h3>
-            <img
-              class="Estrelas"
-              src="./imgs/Avaliações.png"
-              width="100px"
-              alt="Avaliação"
-            />
-            <p class="depoimento">
-              Eu, Ângela Maria, não poderia deixar de reconhecer o apoio
-              essencial do AR Escritório de Advocacia & Assessoria Jurídica. Fui
-              orientada com competência, paciência e carinho em cada etapa do
-              processo. Sem essa ajuda, talvez meu sonho demorasse mais a se
-              realizar. Obrigada de coração! 💖⚖️ #Gratidão
-              #AdvocaciaComPropósito.
-            </p>
-          </div>
-          <button class="carrossel-prev">
-            <img id="imgSetaEsquerda" src="./assets/SetaEsquerda.png" width="100px" alt=".">
-          </button>
-          <button class="carrossel-next">
-            <img id="imgSetaDireita" src="./assets/SetaDireita.png" width="100px" alt=".">
-          </button>
-        </div>
-      </div>
-    </section>
-
-    <!-- Contatos Section -->
-      <footer>
-        <img class="barras" src="./imgs/lado esquerdo.PNG" alt="" />
-        <section id="Contatos">
-          <h1 id="EntreEmContato">Entre em Contato</h1>
-          <p>
-            <span class="contato">Endereço:<br /> </span>
-            Rua Alcides Freitas<br />
-            Edifício Mario vitorio Sala 33,<br />Bairro Por enquanto, Num. 3175
-          </p>
-          <p>
-            <span class="contato"> Email Address: </span>
-
-            <br />
-            <a class="email" href="mailto:arsolucoesjuridicas123@gmail.com"
-              >arsolucoesjuridicas123@gmail.com</a
-            >
-          </p>
-
-          <p>
-            <span class="contato">Telefone:</span>
-            <br />
-            <a class="telefone" href="tel:(86) 99459-4612">(86) 99459-4612</a>
-          </p>
-          <br />
-          <br />
-          <img
-            id="logoFinal"
-            src="./imgs/LogoCompleta.png"
-            width="300px"
-            alt=""
+    <!-- Ícones (sprite SVG) -->
+    <svg width="0" height="0" style="position: absolute" aria-hidden="true">
+      <defs>
+        <symbol id="i-whatsapp" viewBox="0 0 24 24">
+          <path
+            fill="currentColor"
+            d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"
           />
-          <p id="copyright">
-            &copy; 2025 AR Escritório de Advocacia & Acessoria Jurídica
-            <br />
-          </p>
-        </section>
-        <img class="barras" src="./imgs/lado direito.PNG" alt="" />
-      </footer>
+        </symbol>
+        <symbol id="i-briefcase" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+          <rect width="20" height="14" x="2" y="7" rx="2" />
+          <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16" />
+        </symbol>
+        <symbol id="i-landmark" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M3 22h18" />
+          <path d="M6 18v-7M10 18v-7M14 18v-7M18 18v-7" />
+          <path d="M12 2 20 7H4z" />
+        </symbol>
+        <symbol id="i-bag" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z" />
+          <path d="M3 6h18" />
+          <path d="M16 10a4 4 0 0 1-8 0" />
+        </symbol>
+        <symbol id="i-family" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" />
+          <circle cx="9" cy="7" r="4" />
+          <path d="M22 21v-2a4 4 0 0 0-3-3.87" />
+          <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+        </symbol>
+        <symbol id="i-scale" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+          <path d="m16 16 3-8 3 8c-.87.65-1.92 1-3 1s-2.13-.35-3-1Z" />
+          <path d="m2 16 3-8 3 8c-.87.65-1.92 1-3 1s-2.13-.35-3-1Z" />
+          <path d="M7 21h10M12 3v18M3 7h2c2 0 5-1 7-2 2 1 5 2 7 2h2" />
+        </symbol>
+        <symbol id="i-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M5 12h14M13 6l6 6-6 6" />
+        </symbol>
+        <symbol id="i-x" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round">
+          <path d="M18 6 6 18M6 6l12 12" />
+        </symbol>
+        <symbol id="i-phone" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92Z" />
+        </symbol>
+        <symbol id="i-mail" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+          <rect width="20" height="16" x="2" y="4" rx="2" />
+          <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
+        </symbol>
+        <symbol id="i-pin" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z" />
+          <circle cx="12" cy="10" r="3" />
+        </symbol>
+        <symbol id="i-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M20 6 9 17l-5-5" />
+        </symbol>
+        <symbol id="i-star" viewBox="0 0 24 24">
+          <path fill="currentColor" d="m12 2 3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z" />
+        </symbol>
+        <symbol id="i-chev-l" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+          <path d="m15 18-6-6 6-6" />
+        </symbol>
+        <symbol id="i-chev-r" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+          <path d="m9 18 6-6-6-6" />
+        </symbol>
+      </defs>
+    </svg>
 
-    <!-- WhatsApp Link -->
-    <div class="WhatsAppBtnContainer" tabindex="0">
-      <a
-        href=" https://wa.me/5586994594612"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        <img
-          class="WhatsAppBtn"
-          src="./imgs/WhatsAppLogo.png"
-          width="50px"
-          alt="WhatsApp"
-          draggable="false"
-        />
-        <!-- <div class="block"></div> -->
-        <span id="WhatsAppTxt">WhatsApp</span>
-      </a>
-    </div>
-    <script src="script.js"></script>
-    <script src="serviços.js"></script>
+    <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+
+    <!-- ============ CABEÇALHO ============ -->
+    <header class="site-header" id="topo">
+      <div class="container header-inner">
+        <a class="brand" href="#inicio" aria-label="AR Soluções Jurídicas — início">
+          <img src="./assets/img/logo-mark.webp" alt="" width="146" height="160" class="brand-mark" />
+          <span class="brand-text">
+            <span class="brand-name">AR Soluções Jurídicas</span>
+            <span class="brand-tag">Escritório de Advocacia</span>
+          </span>
+        </a>
+
+        <nav class="nav" aria-label="Principal">
+          <ul class="nav-list" id="nav-list">
+            <li style="--i: 0"><a href="#areas">Áreas de atuação</a></li>
+            <li style="--i: 1"><a href="#sobre">Sobre</a></li>
+            <li style="--i: 2"><a href="#equipe">Equipe</a></li>
+            <li style="--i: 3"><a href="#depoimentos">Depoimentos</a></li>
+            <li style="--i: 4"><a href="#contato">Contato</a></li>
+            <li class="nav-cta-mobile" style="--i: 5">
+              <a class="btn btn-gold" href="https://wa.me/5586994594612?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20uma%20consulta." target="_blank" rel="noopener">
+                <svg class="icon" aria-hidden="true"><use href="#i-whatsapp" /></svg>
+                Agendar consulta
+              </a>
+            </li>
+          </ul>
+        </nav>
+
+        <a
+          class="btn btn-gold btn-sm header-cta"
+          href="https://wa.me/5586994594612?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20uma%20consulta."
+          target="_blank"
+          rel="noopener"
+        >
+          Agendar consulta
+        </a>
+
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="nav-list" aria-label="Abrir menu">
+          <span class="menu-bar"></span>
+          <span class="menu-bar"></span>
+        </button>
+      </div>
+    </header>
+
+    <main id="conteudo">
+      <!-- ============ HERO ============ -->
+      <section class="hero" id="inicio" aria-labelledby="hero-title">
+        <picture class="hero-bg" aria-hidden="true">
+          <source media="(max-width: 720px)" srcset="./assets/img/hero-mobile.webp" />
+          <img src="./assets/img/hero.webp" alt="" width="1600" height="896" fetchpriority="high" />
+        </picture>
+        <div class="hero-overlay" aria-hidden="true"></div>
+
+        <div class="container hero-inner">
+          <p class="eyebrow hero-item" style="--i: 0">
+            <span class="eyebrow-line" aria-hidden="true"></span>
+            Advocacia &amp; Consultoria Jurídica
+          </p>
+          <h1 class="hero-title hero-item" id="hero-title" style="--i: 1">
+            Seus direitos defendidos com <em>ética</em>, técnica e dedicação.
+          </h1>
+          <p class="hero-lead hero-item" style="--i: 2">
+            Atuação especializada em Direito do Trabalho, Previdenciário, do Consumidor e de Família,
+            com atendimento próximo e estratégia pensada para cada caso.
+          </p>
+          <div class="hero-actions hero-item" style="--i: 3">
+            <a
+              class="btn btn-gold btn-lg"
+              href="https://wa.me/5586994594612?text=Ol%C3%A1!%20Gostaria%20de%20falar%20com%20um%20advogado."
+              target="_blank"
+              rel="noopener"
+            >
+              <svg class="icon" aria-hidden="true"><use href="#i-whatsapp" /></svg>
+              Fale com um advogado
+            </a>
+            <a class="btn btn-ghost btn-lg" href="#areas">
+              Conheça as áreas
+              <svg class="icon icon-arrow" aria-hidden="true"><use href="#i-arrow" /></svg>
+            </a>
+          </div>
+
+          <dl class="hero-stats hero-item" style="--i: 4">
+            <div>
+              <dt>Desde 2004</dt>
+              <dd>na advocacia</dd>
+            </div>
+            <div>
+              <dt>3 advogados</dt>
+              <dd>especialistas</dd>
+            </div>
+            <div>
+              <dt>4 áreas</dt>
+              <dd>de atuação</dd>
+            </div>
+          </dl>
+        </div>
+
+        <a class="scroll-cue" href="#areas" aria-label="Rolar para as áreas de atuação">
+          <span aria-hidden="true"></span>
+        </a>
+      </section>
+
+      <!-- ============ ÁREAS DE ATUAÇÃO ============ -->
+      <section class="section section-light" id="areas" aria-labelledby="areas-title">
+        <div class="container">
+          <header class="section-head reveal">
+            <p class="eyebrow eyebrow-dark"><span class="eyebrow-line" aria-hidden="true"></span>Áreas de atuação</p>
+            <h2 class="section-title" id="areas-title">Especialização onde você mais precisa</h2>
+            <p class="section-lead">
+              Conhecimento técnico aprofundado e acompanhamento próximo, do primeiro atendimento à solução do seu caso.
+            </p>
+          </header>
+
+          <div class="areas-grid">
+            <article class="area-card reveal" style="--i: 0">
+              <span class="area-num" aria-hidden="true">01</span>
+              <span class="area-icon" aria-hidden="true"><svg><use href="#i-briefcase" /></svg></span>
+              <h3>Direito do Trabalho</h3>
+              <p>
+                Defesa dos direitos do trabalhador: verbas rescisórias, horas extras, assédio moral, acidentes e doenças
+                ocupacionais.
+              </p>
+              <button class="link-more" type="button" data-dialog="dlg-trabalho">
+                Saiba mais <svg class="icon" aria-hidden="true"><use href="#i-arrow" /></svg>
+              </button>
+            </article>
+
+            <article class="area-card reveal" style="--i: 1">
+              <span class="area-num" aria-hidden="true">02</span>
+              <span class="area-icon" aria-hidden="true"><svg><use href="#i-landmark" /></svg></span>
+              <h3>Direito Previdenciário</h3>
+              <p>
+                Aposentadorias, auxílios, BPC/LOAS e pensões junto ao INSS, nas esferas administrativa e judicial.
+              </p>
+              <button class="link-more" type="button" data-dialog="dlg-previdenciario">
+                Saiba mais <svg class="icon" aria-hidden="true"><use href="#i-arrow" /></svg>
+              </button>
+            </article>
+
+            <article class="area-card reveal" style="--i: 2">
+              <span class="area-num" aria-hidden="true">03</span>
+              <span class="area-icon" aria-hidden="true"><svg><use href="#i-bag" /></svg></span>
+              <h3>Direito do Consumidor</h3>
+              <p>
+                Produtos e serviços defeituosos, problemas com voos e viagens, cobranças indevidas e práticas bancárias
+                abusivas.
+              </p>
+              <button class="link-more" type="button" data-dialog="dlg-consumidor">
+                Saiba mais <svg class="icon" aria-hidden="true"><use href="#i-arrow" /></svg>
+              </button>
+            </article>
+
+            <article class="area-card reveal" style="--i: 3">
+              <span class="area-num" aria-hidden="true">04</span>
+              <span class="area-icon" aria-hidden="true"><svg><use href="#i-family" /></svg></span>
+              <h3>Direito de Família</h3>
+              <p>
+                Divórcio, pensão alimentícia, guarda e convivência, união estável, inventários e partilha de bens.
+              </p>
+              <button class="link-more" type="button" data-dialog="dlg-familia">
+                Saiba mais <svg class="icon" aria-hidden="true"><use href="#i-arrow" /></svg>
+              </button>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ SOBRE ============ -->
+      <section class="section section-dark about" id="sobre" aria-labelledby="sobre-title">
+        <div class="container about-grid">
+          <figure class="about-media reveal">
+            <img
+              src="./assets/img/escritorio.webp"
+              alt="Mesa de escritório de advocacia com livros jurídicos, balança da justiça e luminária"
+              width="1100"
+              height="1192"
+              loading="lazy"
+              decoding="async"
+            />
+            <figcaption class="about-seal">
+              <img src="./assets/img/selo.webp" alt="" width="410" height="343" loading="lazy" />
+            </figcaption>
+          </figure>
+
+          <div class="about-copy">
+            <p class="eyebrow reveal"><span class="eyebrow-line" aria-hidden="true"></span>Sobre o escritório</p>
+            <h2 class="section-title reveal" id="sobre-title">Seu parceiro estratégico em questões legais</h2>
+            <p class="reveal">
+              A AR Soluções Jurídicas foi concebida para oferecer suporte jurídico abrangente e de excelência, tanto no
+              âmbito consultivo quanto no contencioso. Cada desafio exige análise meticulosa e uma estratégia
+              personalizada — por isso nos dedicamos a soluções eficazes, focadas em resguardar os seus interesses.
+            </p>
+            <p class="reveal">
+              Da orientação preventiva à representação em litígios complexos, você encontra aqui advogados que não apenas
+              conhecem a lei, mas se comprometem a aplicá-la com rigor, diligência e total dedicação ao seu caso.
+            </p>
+
+            <ul class="pillars">
+              <li class="reveal" style="--i: 0">
+                <span class="pillar-icon" aria-hidden="true"><svg><use href="#i-scale" /></svg></span>
+                <div>
+                  <h3>Atuação ética</h3>
+                  <p>Transparência e integridade como base de toda relação de confiança.</p>
+                </div>
+              </li>
+              <li class="reveal" style="--i: 1">
+                <span class="pillar-icon" aria-hidden="true"><svg><use href="#i-check" /></svg></span>
+                <div>
+                  <h3>Compromisso inabalável</h3>
+                  <p>Acompanhamento próximo e dedicação integral em cada etapa do processo.</p>
+                </div>
+              </li>
+            </ul>
+
+            <blockquote class="about-quote reveal">
+              “Ética, compromisso e soluções para o seu direito.”
+            </blockquote>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ EQUIPE ============ -->
+      <section class="section section-light" id="equipe" aria-labelledby="equipe-title">
+        <div class="container">
+          <header class="section-head reveal">
+            <p class="eyebrow eyebrow-dark"><span class="eyebrow-line" aria-hidden="true"></span>Nossa equipe</p>
+            <h2 class="section-title" id="equipe-title">Quem cuida do seu caso</h2>
+            <p class="section-lead">
+              Advogados com trajetória sólida, formação especializada e atuação diária nas áreas que você precisa.
+            </p>
+          </header>
+
+          <div class="team-grid">
+            <article class="team-card reveal" style="--i: 0">
+              <div class="team-photo">
+                <img src="./assets/img/andreza.webp" alt="Dra. Andreza Alexandra Soares Sousa" width="490" height="509" loading="lazy" />
+              </div>
+              <p class="team-role">Advogada · desde 2004</p>
+              <h3 class="team-name">Dra. Andreza Alexandra Soares Sousa</h3>
+              <p class="team-bio">
+                Advogada militante e Mediadora Judicial. Professora universitária desde 2005, tendo lecionado em diversas
+                faculdades no Piauí e no Maranhão. Pós-graduada em Direito e Processo do Trabalho.
+              </p>
+              <ul class="tags" aria-label="Áreas">
+                <li>Trabalho</li>
+                <li>Mediação</li>
+                <li>Docência</li>
+              </ul>
+            </article>
+
+            <article class="team-card reveal" style="--i: 1">
+              <div class="team-photo">
+                <img src="./assets/img/reginaldo.webp" alt="Dr. Reginaldo Alves de Carvalho" width="490" height="509" loading="lazy" />
+              </div>
+              <p class="team-role">Advogado · desde 2022</p>
+              <h3 class="team-name">Dr. Reginaldo Alves de Carvalho</h3>
+              <p class="team-bio">
+                Pós-graduado em Direito Previdenciário e Direito Eleitoral. Atua diretamente em Direito e Processo do
+                Trabalho, Direito de Família e Sucessões, além de Mediação de Conflitos.
+              </p>
+              <ul class="tags" aria-label="Áreas">
+                <li>Previdenciário</li>
+                <li>Trabalho</li>
+                <li>Família</li>
+              </ul>
+            </article>
+
+            <article class="team-card reveal" style="--i: 2">
+              <div class="team-photo">
+                <img src="./assets/img/allan.webp" alt="Dr. Allan Gomes dos Reis" width="490" height="509" loading="lazy" />
+              </div>
+              <p class="team-role">Advogado · desde 2015</p>
+              <h3 class="team-name">Dr. Allan Gomes dos Reis</h3>
+              <p class="team-bio">
+                Especialista em Direito e Processo do Trabalho e em Direito e Processo Previdenciário (UniFacema). Atua em
+                Direito do Trabalho, Bancário e de Família, orientado pela ética e pela busca da justiça.
+              </p>
+              <ul class="tags" aria-label="Áreas">
+                <li>Trabalho</li>
+                <li>Previdenciário</li>
+                <li>Bancário</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ COMO FUNCIONA ============ -->
+      <section class="section section-dark process" aria-labelledby="processo-title">
+        <div class="container">
+          <header class="section-head reveal">
+            <p class="eyebrow"><span class="eyebrow-line" aria-hidden="true"></span>Como funciona</p>
+            <h2 class="section-title" id="processo-title">Do primeiro contato à solução</h2>
+          </header>
+
+          <ol class="steps">
+            <li class="step reveal" style="--i: 0">
+              <span class="step-num">01</span>
+              <h3>Primeiro contato</h3>
+              <p>Fale conosco pelo WhatsApp, telefone ou e-mail e conte brevemente a sua situação.</p>
+            </li>
+            <li class="step reveal" style="--i: 1">
+              <span class="step-num">02</span>
+              <h3>Análise do caso</h3>
+              <p>Avaliamos fatos e documentos para entender seus direitos e as possibilidades reais.</p>
+            </li>
+            <li class="step reveal" style="--i: 2">
+              <span class="step-num">03</span>
+              <h3>Estratégia</h3>
+              <p>Definimos o melhor caminho — administrativo, extrajudicial ou judicial — com transparência.</p>
+            </li>
+            <li class="step reveal" style="--i: 3">
+              <span class="step-num">04</span>
+              <h3>Acompanhamento</h3>
+              <p>Você é informado sobre cada etapa, com atendimento próximo até a conclusão.</p>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <!-- ============ DEPOIMENTOS ============ -->
+      <section class="section section-light" id="depoimentos" aria-labelledby="depo-title">
+        <div class="container">
+          <header class="section-head section-head-row reveal">
+            <div>
+              <p class="eyebrow eyebrow-dark"><span class="eyebrow-line" aria-hidden="true"></span>Depoimentos</p>
+              <h2 class="section-title" id="depo-title">O que dizem nossos clientes</h2>
+            </div>
+            <div class="slider-controls" aria-hidden="false">
+              <button class="icon-btn" type="button" data-slide="prev" aria-label="Depoimento anterior">
+                <svg class="icon" aria-hidden="true"><use href="#i-chev-l" /></svg>
+              </button>
+              <button class="icon-btn" type="button" data-slide="next" aria-label="Próximo depoimento">
+                <svg class="icon" aria-hidden="true"><use href="#i-chev-r" /></svg>
+              </button>
+            </div>
+          </header>
+
+          <div class="testimonials" tabindex="0" aria-label="Depoimentos de clientes" role="region">
+            <figure class="testimonial reveal" style="--i: 0">
+              <div class="stars" role="img" aria-label="5 de 5 estrelas">
+                <svg><use href="#i-star" /></svg><svg><use href="#i-star" /></svg><svg><use href="#i-star" /></svg><svg><use href="#i-star" /></svg><svg><use href="#i-star" /></svg>
+              </div>
+              <blockquote>
+                Conquistei minha vitória com o apoio da AR! Atendimento impecável, respeito e transparência. Minha causa
+                trabalhista foi resolvida com excelência. Recomendo com total confiança.
+              </blockquote>
+              <figcaption>
+                <img src="./assets/img/cliente-julio.webp" alt="" width="56" height="56" loading="lazy" />
+                <span><strong>Júlio</strong><small>Causa trabalhista</small></span>
+              </figcaption>
+            </figure>
+
+            <figure class="testimonial reveal" style="--i: 1">
+              <div class="stars" role="img" aria-label="5 de 5 estrelas">
+                <svg><use href="#i-star" /></svg><svg><use href="#i-star" /></svg><svg><use href="#i-star" /></svg><svg><use href="#i-star" /></svg><svg><use href="#i-star" /></svg>
+              </div>
+              <blockquote>
+                Gratidão à AR! Atendimento incrível, recepção acolhedora e uma equipe nota 10. Minha causa trabalhista foi
+                resolvida com rapidez e profissionalismo. Recomendo demais!
+              </blockquote>
+              <figcaption>
+                <img src="./assets/img/cliente-jose.webp" alt="" width="56" height="56" loading="lazy" />
+                <span><strong>José Orlando</strong><small>Causa trabalhista</small></span>
+              </figcaption>
+            </figure>
+
+            <figure class="testimonial reveal" style="--i: 2">
+              <div class="stars" role="img" aria-label="5 de 5 estrelas">
+                <svg><use href="#i-star" /></svg><svg><use href="#i-star" /></svg><svg><use href="#i-star" /></svg><svg><use href="#i-star" /></svg><svg><use href="#i-star" /></svg>
+              </div>
+              <blockquote>
+                Fui orientada com competência, paciência e carinho em cada etapa do processo. Sem essa ajuda, talvez meu
+                sonho demorasse mais a se realizar. Obrigada de coração!
+              </blockquote>
+              <figcaption>
+                <img src="./assets/img/cliente-angela.webp" alt="" width="56" height="56" loading="lazy" />
+                <span><strong>Ângela Maria</strong><small>Cliente AR</small></span>
+              </figcaption>
+            </figure>
+          </div>
+          <div class="slider-dots" aria-hidden="true"></div>
+        </div>
+      </section>
+
+      <!-- ============ CTA ============ -->
+      <section class="cta" aria-labelledby="cta-title">
+        <div class="container cta-inner reveal">
+          <img class="cta-seal" src="./assets/img/selo.webp" alt="" width="410" height="343" loading="lazy" />
+          <div class="cta-copy">
+            <h2 id="cta-title">Não enfrente isso sozinho.</h2>
+            <p>Converse com um advogado da AR e entenda, com clareza, quais são os seus direitos.</p>
+          </div>
+          <div class="cta-actions">
+            <a
+              class="btn btn-gold btn-lg"
+              href="https://wa.me/5586994594612?text=Ol%C3%A1!%20Gostaria%20de%20falar%20com%20um%20advogado."
+              target="_blank"
+              rel="noopener"
+            >
+              <svg class="icon" aria-hidden="true"><use href="#i-whatsapp" /></svg>
+              Chamar no WhatsApp
+            </a>
+            <a class="btn btn-ghost btn-lg" href="tel:+5586994594612">
+              <svg class="icon" aria-hidden="true"><use href="#i-phone" /></svg>
+              (86) 99459-4612
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- ============ RODAPÉ / CONTATO ============ -->
+    <footer class="footer" id="contato">
+      <div class="container footer-grid">
+        <div class="footer-brand">
+          <img src="./assets/img/logo-completa.webp" alt="AR Soluções Jurídicas — Escritório de Advocacia" width="410" height="343" loading="lazy" />
+        </div>
+
+        <div class="footer-col">
+          <h2 class="footer-title">Contato</h2>
+          <ul class="contact-list">
+            <li>
+              <svg class="icon" aria-hidden="true"><use href="#i-pin" /></svg>
+              <address>
+                Rua Alcides Freitas, nº 3175<br />
+                Edifício Mario Vitorio, Sala 33
+              </address>
+            </li>
+            <li>
+              <svg class="icon" aria-hidden="true"><use href="#i-phone" /></svg>
+              <a href="tel:+5586994594612">(86) 99459-4612</a>
+            </li>
+            <li>
+              <svg class="icon" aria-hidden="true"><use href="#i-mail" /></svg>
+              <a href="mailto:arsolucoesjuridicas123@gmail.com">arsolucoesjuridicas123@gmail.com</a>
+            </li>
+            <li>
+              <svg class="icon" aria-hidden="true"><use href="#i-whatsapp" /></svg>
+              <a href="https://wa.me/5586994594612" target="_blank" rel="noopener">WhatsApp</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h2 class="footer-title">Áreas de atuação</h2>
+          <ul class="footer-links">
+            <li><button type="button" data-dialog="dlg-trabalho">Direito do Trabalho</button></li>
+            <li><button type="button" data-dialog="dlg-previdenciario">Direito Previdenciário</button></li>
+            <li><button type="button" data-dialog="dlg-consumidor">Direito do Consumidor</button></li>
+            <li><button type="button" data-dialog="dlg-familia">Direito de Família</button></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h2 class="footer-title">Navegação</h2>
+          <ul class="footer-links">
+            <li><a href="#sobre">Sobre o escritório</a></li>
+            <li><a href="#equipe">Nossa equipe</a></li>
+            <li><a href="#depoimentos">Depoimentos</a></li>
+            <li><a href="#inicio">Voltar ao topo</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="container footer-bottom">
+        <p>© <span data-year>2026</span> AR Soluções Jurídicas · Escritório de Advocacia &amp; Assessoria Jurídica</p>
+        <p>Conteúdo de caráter exclusivamente informativo.</p>
+      </div>
+    </footer>
+
+    <!-- ============ BOTÃO WHATSAPP ============ -->
+    <a
+      class="fab"
+      href="https://wa.me/5586994594612?text=Ol%C3%A1!%20Vim%20pelo%20site%20e%20gostaria%20de%20atendimento."
+      target="_blank"
+      rel="noopener"
+      aria-label="Conversar no WhatsApp"
+    >
+      <span class="fab-label" aria-hidden="true">Fale conosco</span>
+      <span class="fab-btn"><svg aria-hidden="true"><use href="#i-whatsapp" /></svg></span>
+    </a>
+
+    <!-- ============ MODAIS DAS ÁREAS ============ -->
+    <dialog class="modal" id="dlg-trabalho" aria-labelledby="dlg-trabalho-title">
+      <div class="modal-inner">
+        <header class="modal-head">
+          <span class="area-icon" aria-hidden="true"><svg><use href="#i-briefcase" /></svg></span>
+          <div>
+            <p class="modal-kicker">Direito do Trabalho</p>
+            <h2 id="dlg-trabalho-title">A defesa do trabalhador é a nossa missão</h2>
+          </div>
+          <button class="icon-btn modal-close" type="button" data-close aria-label="Fechar">
+            <svg class="icon" aria-hidden="true"><use href="#i-x" /></svg>
+          </button>
+        </header>
+        <div class="modal-body" tabindex="-1" autofocus>
+          <p>
+            Quando seus direitos no ambiente de trabalho são desrespeitados, você precisa de um aliado que entenda
+            profundamente a legislação e atue com firmeza pela sua justiça. Nosso escritório é especializado no Direito do
+            Trabalho, com foco na defesa do empregado.
+          </p>
+          <p>
+            Dominamos as complexidades da CLT e das decisões mais recentes dos Tribunais. Se você se sentiu lesado ou teve
+            seus direitos violados, estamos prontos para atuar com <strong>rigor técnico e dedicação</strong>.
+          </p>
+          <h3>Como podemos ajudar</h3>
+          <ul class="modal-list">
+            <li>
+              <strong>Verbas rescisórias não pagas ou incorretas</strong>
+              Aviso prévio, férias, 13º salário, multa de 40% do FGTS e demais parcelas devidas no fim do contrato.
+            </li>
+            <li>
+              <strong>Jornada de trabalho e horas extras</strong>
+              Trabalho além da jornada legal, intervalo intrajornada não usufruído e adicional noturno, com seus reflexos.
+            </li>
+            <li>
+              <strong>Assédio moral e dano moral</strong>
+              Humilhações, perseguições ou condições degradantes que afetaram sua saúde física ou mental.
+            </li>
+            <li>
+              <strong>Acidente de trabalho e doença ocupacional</strong>
+              Estabilidade, indenização por danos materiais e morais e o correto encaminhamento previdenciário.
+            </li>
+          </ul>
+          <p class="modal-closing">
+            <strong>Sua luta por dignidade no trabalho é a nossa prioridade.</strong> Entre em contato e agende uma
+            consulta.
+          </p>
+        </div>
+        <footer class="modal-foot">
+          <a class="btn btn-gold" href="https://wa.me/5586994594612?text=Ol%C3%A1!%20Gostaria%20de%20falar%20sobre%20Direito%20do%20Trabalho." target="_blank" rel="noopener">
+            <svg class="icon" aria-hidden="true"><use href="#i-whatsapp" /></svg>
+            Falar sobre meu caso
+          </a>
+          <button class="btn btn-outline-dark" type="button" data-close>Fechar</button>
+        </footer>
+      </div>
+    </dialog>
+
+    <dialog class="modal" id="dlg-previdenciario" aria-labelledby="dlg-prev-title">
+      <div class="modal-inner">
+        <header class="modal-head">
+          <span class="area-icon" aria-hidden="true"><svg><use href="#i-landmark" /></svg></span>
+          <div>
+            <p class="modal-kicker">Direito Previdenciário</p>
+            <h2 id="dlg-prev-title">Conquiste seu futuro com segurança previdenciária</h2>
+          </div>
+          <button class="icon-btn modal-close" type="button" data-close aria-label="Fechar">
+            <svg class="icon" aria-hidden="true"><use href="#i-x" /></svg>
+          </button>
+        </header>
+        <div class="modal-body" tabindex="-1" autofocus>
+          <p>
+            O acesso à aposentadoria e aos demais benefícios do INSS é um direito, mas a burocracia pode ser um obstáculo
+            frustrante. Atuamos para simplificar esse processo e buscar o benefício correto, no menor tempo possível.
+          </p>
+          <p>
+            Com experiência comprovada na área, atuamos de forma estratégica — da análise do seu tempo de contribuição à
+            contestação de negativas na Justiça.
+          </p>
+          <h3>Aposentadorias (urbana e rural)</h3>
+          <ul class="modal-list">
+            <li>
+              <strong>Por tempo de contribuição</strong>
+              Revisão e inclusão de períodos especiais (insalubridade/periculosidade) não reconhecidos pelo INSS.
+            </li>
+            <li>
+              <strong>Por idade</strong>
+              Comprovação do tempo de carência e da atividade rural (segurado especial).
+            </li>
+            <li>
+              <strong>Planejamento previdenciário</strong>
+              Simulação e orientação para você saber o momento certo de se aposentar com o melhor valor possível.
+            </li>
+          </ul>
+          <h3>Auxílio por incapacidade e acidentes</h3>
+          <ul class="modal-list">
+            <li>
+              <strong>Contestação judicial</strong>
+              Reversão de perícias médicas negativas por meio de laudos técnicos e ações judiciais.
+            </li>
+            <li>
+              <strong>Acidentes de trabalho</strong>
+              Reconhecimento do nexo causal e obtenção de benefícios acidentários, muitas vezes mais vantajosos.
+            </li>
+          </ul>
+          <h3>BPC/LOAS e pensão</h3>
+          <ul class="modal-list">
+            <li>
+              <strong>BPC/LOAS</strong>
+              Assessoria completa para pessoas com deficiência e idosos de baixa renda.
+            </li>
+            <li>
+              <strong>Pensão por morte</strong>
+              Reconhecimento da qualidade de dependente para garantir o benefício após o falecimento do segurado.
+            </li>
+          </ul>
+          <p class="modal-closing">
+            <strong>Não enfrente o INSS sozinho.</strong> Se o seu pedido foi negado ou você precisa planejar o futuro,
+            fale conosco e dê o primeiro passo.
+          </p>
+        </div>
+        <footer class="modal-foot">
+          <a class="btn btn-gold" href="https://wa.me/5586994594612?text=Ol%C3%A1!%20Gostaria%20de%20falar%20sobre%20Direito%20Previdenci%C3%A1rio." target="_blank" rel="noopener">
+            <svg class="icon" aria-hidden="true"><use href="#i-whatsapp" /></svg>
+            Falar sobre meu caso
+          </a>
+          <button class="btn btn-outline-dark" type="button" data-close>Fechar</button>
+        </footer>
+      </div>
+    </dialog>
+
+    <dialog class="modal" id="dlg-consumidor" aria-labelledby="dlg-cons-title">
+      <div class="modal-inner">
+        <header class="modal-head">
+          <span class="area-icon" aria-hidden="true"><svg><use href="#i-bag" /></svg></span>
+          <div>
+            <p class="modal-kicker">Direito do Consumidor</p>
+            <h2 id="dlg-cons-title">Seus direitos de consumidor em boas mãos</h2>
+          </div>
+          <button class="icon-btn modal-close" type="button" data-close aria-label="Fechar">
+            <svg class="icon" aria-hidden="true"><use href="#i-x" /></svg>
+          </button>
+        </header>
+        <div class="modal-body" tabindex="-1" autofocus>
+          <p>
+            Na relação entre consumidores e fornecedores, é fundamental contar com assessoria especializada para que seus
+            direitos sejam integralmente respeitados. Protegemos você contra práticas abusivas, falhas na prestação de
+            serviços e problemas com produtos, com base no Código de Defesa do Consumidor (CDC).
+          </p>
+          <h3>Como podemos ajudar</h3>
+          <ul class="modal-list">
+            <li>
+              <strong>Produtos e serviços defeituosos</strong>
+              Troca do produto, restituição do valor pago ou cumprimento forçado da oferta.
+            </li>
+            <li>
+              <strong>Direito aéreo e de viagens</strong>
+              Cancelamentos, atrasos, overbooking e extravio de bagagem — com busca de indenização por danos morais e
+              materiais.
+            </li>
+            <li>
+              <strong>Questões bancárias e financeiras</strong>
+              Cobranças indevidas, tarifas abusivas, negativação injusta no SPC/Serasa, empréstimos fraudulentos e golpes
+              em transações.
+            </li>
+          </ul>
+          <p class="modal-closing">
+            <strong>Sua tranquilidade é a nossa prioridade.</strong> Se você se sentiu lesado em uma relação de consumo,
+            fale conosco.
+          </p>
+        </div>
+        <footer class="modal-foot">
+          <a class="btn btn-gold" href="https://wa.me/5586994594612?text=Ol%C3%A1!%20Gostaria%20de%20falar%20sobre%20Direito%20do%20Consumidor." target="_blank" rel="noopener">
+            <svg class="icon" aria-hidden="true"><use href="#i-whatsapp" /></svg>
+            Falar sobre meu caso
+          </a>
+          <button class="btn btn-outline-dark" type="button" data-close>Fechar</button>
+        </footer>
+      </div>
+    </dialog>
+
+    <dialog class="modal" id="dlg-familia" aria-labelledby="dlg-fam-title">
+      <div class="modal-inner">
+        <header class="modal-head">
+          <span class="area-icon" aria-hidden="true"><svg><use href="#i-family" /></svg></span>
+          <div>
+            <p class="modal-kicker">Direito de Família</p>
+            <h2 id="dlg-fam-title">Questões de família com segurança jurídica</h2>
+          </div>
+          <button class="icon-btn modal-close" type="button" data-close aria-label="Fechar">
+            <svg class="icon" aria-hidden="true"><use href="#i-x" /></svg>
+          </button>
+        </header>
+        <div class="modal-body" tabindex="-1" autofocus>
+          <p>
+            Decisões que envolvem a família são sempre delicadas e exigem um suporte que vá além da técnica: é preciso
+            sensibilidade, experiência e estratégia, priorizando o bem-estar emocional e financeiro de quem atendemos.
+          </p>
+          <p>
+            Cada história é única. Por isso, oferecemos atendimento personalizado para proteger os seus direitos e os dos
+            seus filhos, transformando momentos de crise em soluções justas e definitivas.
+          </p>
+          <h3>Como podemos ajudar</h3>
+          <ul class="modal-list">
+            <li>
+              <strong>Divórcio judicial e extrajudicial (em cartório)</strong>
+              Consensual ou litigioso, com partilha justa de bens e encerramento do vínculo com segurança.
+            </li>
+            <li>
+              <strong>Pensão alimentícia</strong>
+              Fixação de valor justo, revisão quando a situação financeira muda e execução de pensões em atraso.
+            </li>
+            <li>
+              <strong>União estável</strong>
+              Reconhecimento e dissolução, protegendo patrimônio e direitos de herança ou pensão.
+            </li>
+            <li>
+              <strong>Guarda e regime de convivência</strong>
+              Guarda compartilhada ou unilateral, sempre no melhor interesse da criança.
+            </li>
+          </ul>
+          <p class="modal-closing">
+            <strong>Você não precisa passar por isso sozinho.</strong> Entre em contato para agendar uma consulta sobre
+            divórcio, pensão ou união estável.
+          </p>
+        </div>
+        <footer class="modal-foot">
+          <a class="btn btn-gold" href="https://wa.me/5586994594612?text=Ol%C3%A1!%20Gostaria%20de%20falar%20sobre%20Direito%20de%20Fam%C3%ADlia." target="_blank" rel="noopener">
+            <svg class="icon" aria-hidden="true"><use href="#i-whatsapp" /></svg>
+            Falar sobre meu caso
+          </a>
+          <button class="btn btn-outline-dark" type="button" data-close>Fechar</button>
+        </footer>
+      </div>
+    </dialog>
+
+    <script src="./scripts/main.js" defer></script>
   </body>
 </html>
